@@ -1,0 +1,608 @@
+/* ================================================================
+   ALOY FOUNDATION - MODERN HOME PAGE STYLESHEET
+   Ultra-modern, Clean UI/UX & 100% Fully Responsive
+   ================================================================ */
+
+/* -------------------------------------------------------------
+   1. HERO BANNER SLIDER (Clean Image Slider)
+   ------------------------------------------------------------- */
+.hero-banner {
+  position: relative;
+  background: #06101e;
+  overflow: hidden;
+}
+
+.hero-banner .carousel-item {
+  position: relative;
+  width: 100%;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: cover;
+  transition: transform 7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (max-width: 767.98px) {
+  .hero-banner-img {
+    min-height: 220px;
+    max-height: 340px;
+  }
+}
+
+.carousel-item.active .hero-banner-img {
+  transform: scale(1.03);
+}
+
+/* Carousel Indicators & Arrows */
+.hero-banner .carousel-indicators {
+  bottom: 24px;
+  z-index: 3;
+  gap: 8px;
+}
+
+.hero-banner .carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 6px;
+  border-radius: 4px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hero-banner .carousel-indicators .active {
+  width: 44px;
+  background-color: #38bdf8;
+}
+
+.hero-banner .carousel-control-prev,
+.hero-banner .carousel-control-next {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  backdrop-filter: blur(6px);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.hero-banner:hover .carousel-control-prev,
+.hero-banner:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.hero-banner .carousel-control-prev {
+  left: 24px;
+}
+.hero-banner .carousel-control-next {
+  right: 24px;
+}
+
+.hero-banner .carousel-control-prev:hover,
+.hero-banner .carousel-control-next:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 767.98px) {
+  .hero-banner .carousel-control-prev,
+  .hero-banner .carousel-control-next {
+    width: 38px;
+    height: 38px;
+  }
+  .hero-banner .carousel-control-prev {
+    left: 10px;
+  }
+  .hero-banner .carousel-control-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-banner .carousel-control-prev,
+  .hero-banner .carousel-control-next {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------------
+   2. STATS & IMPACT RIBBON (Trust Bar)
+   ------------------------------------------------------------- */
+.stats-ribbon {
+  position: relative;
+  z-index: 4;
+  margin-top: -36px;
+  margin-bottom: 24px;
+}
+
+.stats-card-wrap {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  padding: 24px 16px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border-right: 1px solid #f1f5f9;
+}
+
+@media (max-width: 991.98px) {
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 14px 10px;
+  }
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stat-icon.blue {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+.stat-icon.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+.stat-icon.amber {
+  background: #fef3c7;
+  color: #d97706;
+}
+.stat-icon.purple {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.stat-content h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.stat-content p {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 2px 0 0;
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------
+   3. SECTIONS COMMON UI
+   ------------------------------------------------------------- */
+.home-section {
+  padding: 64px 0;
+  position: relative;
+}
+
+.home-section.alt {
+  background: #f8fafc;
+}
+
+.sec-head {
+  margin-bottom: 36px;
+}
+
+.sec-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: #e0f2fe;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.sec-sub {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.sec-link {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0284c7;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  background: #f0f9ff;
+  transition: all 0.25s ease;
+}
+
+.sec-link:hover {
+  background: #0284c7;
+  color: #ffffff !important;
+  transform: translateX(3px);
+}
+
+/* -------------------------------------------------------------
+   4. PROGRAMS & PROJECTS (OWL CAROUSEL)
+   ------------------------------------------------------------- */
+.prog-section {
+  background: #ffffff;
+}
+
+.prog-heading-wrap {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.prog-box {
+  position: relative;
+  padding: 8px 4px 20px;
+}
+
+.prog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.prog-card:hover {
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
+}
+
+.prog-img-wrap {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.prog-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.prog-card:hover .prog-img-wrap img {
+  transform: scale(1.06);
+}
+
+.prog-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+}
+
+.prog-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.prog-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.prog-text {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.prog-donate {
+  margin-top: auto;
+  width: 100%;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff !important;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-weight: 700;
+  font-size: 0.94rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  transition: all 0.25s ease;
+}
+
+.prog-donate:hover {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Owl Carousel Custom Controls */
+.prog-section .owl-stage {
+  display: flex;
+  padding: 10px 0 15px;
+}
+
+.prog-section .owl-item {
+  display: flex;
+}
+
+.prog-section .owl-item .prog-card {
+  width: 100%;
+}
+
+.prog-section .owl-nav button.owl-prev,
+.prog-section .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a !important;
+  font-size: 1.15rem;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.25s ease;
+  z-index: 5;
+}
+
+.prog-section .owl-nav .owl-prev {
+  left: -18px;
+}
+.prog-section .owl-nav .owl-next {
+  right: -18px;
+}
+
+.prog-section .owl-nav button:hover {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+}
+
+@media (max-width: 767.98px) {
+  .prog-section .owl-nav .owl-prev {
+    left: -6px;
+  }
+  .prog-section .owl-nav .owl-next {
+    right: -6px;
+  }
+}
+
+/* -------------------------------------------------------------
+   5. MODERN CARDS (News, Stories & Aloy Media)
+   ------------------------------------------------------------- */
+.m-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: inherit;
+  text-decoration: none;
+}
+
+.m-card:hover {
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
+}
+
+.m-media {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.m-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.m-card:hover .m-media img {
+  transform: scale(1.06);
+}
+
+.m-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.m-tag.dark {
+  background: rgba(11, 25, 44, 0.88);
+  backdrop-filter: blur(4px);
+}
+
+.m-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px 24px;
+}
+
+.m-date {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.m-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.m-text {
+  font-size: 0.94rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.m-link {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0284c7;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease;
+}
+
+.m-card:hover .m-link {
+  color: #0369a1;
+  transform: translateX(4px);
+}
+
+/* -------------------------------------------------------------
+   6. VIDEO CARDS & GLOWING PLAY BUTTON
+   ------------------------------------------------------------- */
+.m-card.video .m-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 30%,
+    rgba(11, 25, 44, 0.75) 100%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.m-card.video:hover .m-media::after {
+  opacity: 0.9;
+}
+
+.play {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #e11d48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.play i {
+  margin-left: 3px; /* visual center for play icon */
+}
+
+.m-card.video:hover .play {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: #e11d48;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(225, 29, 72, 0.5);
+}
+
+/* -------------------------------------------------------------
+   7. UTILITY CLAMPS & RESPONSIVE TWEAKS
+   ------------------------------------------------------------- */
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+  .home-section {
+    padding: 44px 0;
+  }
+  .sec-head {
+    margin-bottom: 24px;
+  }
+  .m-body {
+    padding: 16px 18px;
+  }
+}
