@@ -3,7 +3,7 @@
    ================================================================ */
 
 .page-contact {
-  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 300px);
+  background: linear-gradient(180deg, #f4fbf6 0%, #ffffff 300px);
   min-height: 500px;
 }
 
@@ -56,8 +56,8 @@
 }
 
 .contact-input:focus {
-  border-color: #0284c7;
-  box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.12);
+  border-color: #0d7a53;
+  box-shadow: 0 0 0 4px rgba(13, 122, 83, 0.12);
   outline: none;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .btn-contact-submit {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #0d7a53 0%, #09583b 100%);
   color: #ffffff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -78,15 +78,15 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+  box-shadow: 0 4px 14px rgba(13, 122, 83, 0.3);
   transition: all 0.25s ease;
   width: 100%;
   cursor: pointer;
 }
 
 .btn-contact-submit:hover {
-  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
-  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
+  background: linear-gradient(135deg, #09583b 0%, #0d7a53 100%);
+  box-shadow: 0 6px 18px rgba(13, 122, 83, 0.4);
   transform: translateY(-2px);
 }
 
@@ -125,7 +125,7 @@
   top: 12px;
   left: 12px;
   background: #ffffff;
-  color: #0284c7;
+  color: #0d7a53;
   font-size: 0.8rem;
   font-weight: 700;
   padding: 6px 12px;
@@ -142,7 +142,7 @@
 
 .map-open-btn:hover {
   background: #f0f9ff;
-  color: #0369a1;
+  color: #09583b;
 }
 
 /* Contact Info List */
@@ -204,7 +204,7 @@
 }
 
 .contact-detail-value a:hover {
-  color: #0284c7;
+  color: #0d7a53;
 }
 
 /* Social & Working Hours Strip */

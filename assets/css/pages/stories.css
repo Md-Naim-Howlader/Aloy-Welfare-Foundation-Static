@@ -3,7 +3,7 @@
    ================================================================ */
 
 .page-stories {
-  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 300px);
+  background: linear-gradient(180deg, #f4fbf6 0%, #ffffff 300px);
   min-height: 500px;
 }
 
@@ -34,16 +34,16 @@
 
 .story-filter-btn:hover {
   background: #f8fafc;
-  color: #0284c7;
-  border-color: #93c5fd;
+  color: #0d7a53;
+  border-color: #a7f3d0;
   transform: translateY(-1px);
 }
 
 .story-filter-btn.active {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #0d7a53 0%, #09583b 100%);
   color: #ffffff;
-  border-color: #0284c7;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  border-color: #0d7a53;
+  box-shadow: 0 4px 14px rgba(13, 122, 83, 0.35);
 }
 
 .story-filter-btn .badge {
@@ -113,7 +113,7 @@
   z-index: 2;
 }
 
-.m-tag.blue { background: #0284c7; }
+.m-tag.blue { background: #0d7a53; }
 .m-tag.purple { background: #7e22ce; }
 .m-tag.amber { background: #d97706; }
 .m-tag.rose { background: #e11d48; }
@@ -136,7 +136,7 @@
 }
 
 .m-date i {
-  color: #0284c7;
+  color: #0d7a53;
 }
 
 .m-title {
@@ -150,7 +150,7 @@
 .m-subtitle-bn {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0284c7;
+  color: #0d7a53;
   margin-bottom: 10px;
 }
 
@@ -165,7 +165,7 @@
   margin-top: auto;
   font-weight: 700;
   font-size: 0.92rem;
-  color: #0284c7;
+  color: #0d7a53;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -179,7 +179,7 @@
 
 .m-link:hover,
 .m-card:hover .m-link {
-  color: #0369a1;
+  color: #09583b;
   transform: translateX(4px);
 }
 
@@ -217,10 +217,10 @@
 
 .story-quote-box {
   background: #f0f9ff;
-  border-left: 4px solid #0284c7;
+  border-left: 4px solid #0d7a53;
   padding: 14px 18px;
   border-radius: 0 10px 10px 0;
   font-style: italic;
-  color: #0369a1;
+  color: #09583b;
   margin: 18px 0;
 }
