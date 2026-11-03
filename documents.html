@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Licenses &amp; Documents | Aloy Foundation</title>
+    <title>Licence &amp; Documents | Aloy Welfare Foundation</title>
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,26 +23,27 @@
     <link rel="stylesheet" href="assets/css/pages/documents.css" />
   </head>
   <body class="lang-en">
+    <!-- ===== TOP BAR ===== -->
     <div class="top-bar">
       <div
         class="container d-flex flex-wrap justify-content-between align-items-center"
       >
         <div class="d-flex align-items-center gap-3">
-          <span class="d-none d-md-inline text-white-50"
-            ><i class="bi bi-shield-check text-warning me-1"></i>Govt NGO
-            Affairs Reg: AF-8912 | 100% Tax-Exempt</span
-          >
-          <span class="d-flex align-items-center gap-1"
-            ><i class="bi bi-telephone-fill text-warning"></i>
+          <span class="d-none d-md-inline text-white-50">
+            <i class="bi bi-shield-check text-warning me-1"></i>Govt NGO Affairs
+            Reg: AF-8912 | 100% Tax-Exempt
+          </span>
+          <span class="d-flex align-items-center gap-1">
+            <i class="bi bi-telephone-fill text-warning"></i>
             <a href="tel:+8809612345678" class="fw-semibold"
               >+880 9612-345678</a
-            ></span
-          >
+            >
+          </span>
         </div>
         <div class="language-switcher-container">
           <div class="language-select-wrapper">
             <span class="language-icon">
-              <i class="fas fa-globe"></i>
+              <i class="bi bi-globe"></i>
             </span>
             <select
               id="languageSwitcher"
@@ -55,7 +56,6 @@
               <option value="hi">हिन्दी</option>
             </select>
           </div>
-          <!-- Hidden Google Translate Element -->
           <div id="google_translate_element"></div>
         </div>
       </div>
@@ -74,15 +74,10 @@
             class="rounded"
           />
           <div class="d-flex flex-column">
-            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)"
-              >Aloy
-              <span style="color: var(--aloy-green-dark)"
-                >Foundation</span
-              ></span
-            >
-            <!-- <small class="text-muted fw-semibold" style="font-size: 0.72rem"
-                >Aloy Welfare Foundation Bangladesh</small
-              > -->
+            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)">
+              Aloy
+              <span style="color: var(--aloy-green-dark)">Foundation</span>
+            </span>
           </div>
         </a>
         <button
@@ -96,7 +91,7 @@
         <div class="collapse navbar-collapse" id="navMain">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -126,17 +121,17 @@
                 </li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="transparency.html">Transparency</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="documents.html"
-                  >Licenses &amp; Documents</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="stories.html">Impact Stories</a>
-              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="transparency.html">Transparency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="documents.html"
+                >Licenses &amp; Documents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stories.html">Impact Stories</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -147,29 +142,331 @@
             data-bs-toggle="modal"
             data-bs-target="#donationModal"
           >
-            <i class="bi bi-heart-fill"></i> <span>Donate Now</span>
+            <span>Donate</span>
           </button>
         </div>
       </nav>
     </header>
 
-    <!-- ===== PAGE HERO ===== -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="page-breadcrumb">
-          <a href="index.html">Home</a> <span>/</span>
-          <span>Licenses &amp; Documents</span>
+    <!-- ===== 1. GREEN NATURE HERO SECTION ===== -->
+    <section class="licence-hero">
+      <div class="container position-relative z-1">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="hero-breadcrumb">
+              <a href="index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a>
+              <span>&gt;</span>
+              <span>Licence &amp; Documents</span>
+            </div>
+            <h1 class="hero-title">Licence &amp; Documents</h1>
+            <p class="hero-lead">
+              Our organization is registered and authorized by the Government
+              of Bangladesh. Here you can find our official licence and important documents.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center d-none d-lg-block">
+            <!-- Plant/Seedling Graphic -->
+            <div class="p-3">
+              <i class="bi bi-flower1 text-white-50" style="font-size: 8rem; opacity: 0.35;"></i>
+            </div>
+          </div>
         </div>
-        <h1 class="page-hero-title">Licenses &amp; Documents</h1>
-        <p class="page-hero-lead">Registration, tax exemption and approvals.</p>
+      </div>
+      <div class="licence-hero-wave"></div>
+    </section>
+
+    <!-- ===== MAIN CONTENT SECTION ===== -->
+    <section class="py-4 page-licence">
+      <div class="container">
+        <!-- ===== 2. FEATURED GOVERNMENT LICENCE CARD ===== -->
+        <div class="featured-licence-card">
+          <div class="row g-4 align-items-center">
+            <!-- Left Info Column -->
+            <div class="col-lg-6">
+              <span class="badge-govt-licence">
+                <i class="bi bi-bank2"></i> Government Licence
+              </span>
+              <h2 class="featured-licence-title">
+                NGO Affairs Bureau Registration
+              </h2>
+              <p class="featured-licence-desc">
+                Aloy Welfare Foundation is a registered Non-Governmental Organization
+                (NGO) under the NGO Affairs Bureau, Government of Bangladesh.
+              </p>
+
+              <ul class="licence-check-list">
+                <li class="licence-check-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Registration No : AF-8912</span>
+                </li>
+                <li class="licence-check-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Registration Date : 15 January 2015</span>
+                </li>
+                <li class="licence-check-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Renewal Date : 14 January 2025</span>
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                class="btn-download-cert"
+                onclick="openDocPreview('NGO Affairs Bureau Registration Certificate', 'assets/images/documents/doc-1.png')"
+              >
+                <i class="bi bi-download"></i>
+                <span>Download Certificate (PDF)</span>
+              </button>
+            </div>
+
+            <!-- Right Certificate Preview Frame -->
+            <div class="col-lg-6">
+              <div
+                class="cert-preview-frame"
+                onclick="openDocPreview('NGO Affairs Bureau Registration Certificate', 'assets/images/documents/doc-1.png')"
+                title="Click to preview certificate full-screen"
+              >
+                <div class="cert-inner-border">
+                  <!-- Govt Emblem -->
+                  <div class="text-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_Seal_of_Bangladesh.svg"
+                      alt="Government of Bangladesh Seal"
+                      class="cert-govt-emblem"
+                    />
+                    <div class="cert-header-bn">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</div>
+                    <div class="cert-header-en">NGO Affairs Bureau</div>
+                    <div class="cert-header-sub">Government of the People's Republic of Bangladesh</div>
+                  </div>
+
+                  <!-- Certificate Body -->
+                  <div class="py-2">
+                    <div class="cert-main-title">Registration Certificate</div>
+                    <div class="cert-certify-text">This is to certify that</div>
+                    <div class="cert-foundation-name">Aloy Welfare Foundation</div>
+                    <div class="cert-sub-text">
+                      has been registered under the NGO Affairs Bureau,<br />
+                      Government of Bangladesh.
+                    </div>
+                  </div>
+
+                  <!-- Certificate Bottom Row (QR & Signature) -->
+                  <div class="cert-bottom-row">
+                    <div class="cert-qr-box" title="Scan QR Code">
+                      <i class="bi bi-qr-code"></i>
+                    </div>
+                    <div class="cert-signature-box">
+                      <div class="cert-signature-img">MD. Rahman</div>
+                      <div class="cert-sign-label">Director<br />NGO Affairs Bureau</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 3. SECTION: OUR IMPORTANT DOCUMENTS ===== -->
+        <div class="sec-doc-header">
+          <div class="sec-doc-icon-box">
+            <i class="bi bi-file-earmark-text-fill"></i>
+          </div>
+          <div>
+            <h2 class="sec-doc-title">Our Important Documents</h2>
+            <p class="sec-doc-subtitle">You can download our key documents from here.</p>
+          </div>
+        </div>
+
+        <!-- 6 Documents Grid (3 columns x 2 rows) -->
+        <div class="row g-4">
+          <!-- Card 1: NGO Registration Certificate -->
+          <div class="col-md-6 col-lg-4">
+            <div class="key-doc-card">
+              <div class="key-doc-icon-wrap icon-wrap-green">
+                <i class="bi bi-file-earmark-text-fill"></i>
+              </div>
+              <div class="key-doc-content">
+                <h3 class="key-doc-title">NGO Registration Certificate</h3>
+                <p class="key-doc-desc">Official registration certificate from NGO Affairs Bureau.</p>
+                <button
+                  type="button"
+                  class="btn-download-sm"
+                  onclick="openDocPreview('NGO Registration Certificate', 'assets/images/documents/doc-1.png')"
+                >
+                  <i class="bi bi-download"></i> Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Renewal Certificate -->
+          <div class="col-md-6 col-lg-4">
+            <div class="key-doc-card">
+              <div class="key-doc-icon-wrap icon-wrap-blue">
+                <i class="bi bi-bank2"></i>
+              </div>
+              <div class="key-doc-content">
+                <h3 class="key-doc-title">Renewal Certificate</h3>
+                <p class="key-doc-desc">Latest renewal certificate.</p>
+                <button
+                  type="button"
+                  class="btn-download-sm"
+                  onclick="openDocPreview('Renewal Certificate', 'assets/images/documents/doc-2.png')"
+                >
+                  <i class="bi bi-download"></i> Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Tax Identification Number (TIN) -->
+          <div class="col-md-6 col-lg-4">
+            <div class="key-doc-card">
+              <div class="key-doc-icon-wrap icon-wrap-orange">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="key-doc-content">
+                <h3 class="key-doc-title">Tax Identification Number (TIN)</h3>
+                <p class="key-doc-desc">Our TIN certificate.</p>
+                <button
+                  type="button"
+                  class="btn-download-sm"
+                  onclick="openDocPreview('Tax Identification Number (TIN)', 'assets/images/documents/doc-3.png')"
+                >
+                  <i class="bi bi-download"></i> Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Trade Licence -->
+          <div class="col-md-6 col-lg-4">
+            <div class="key-doc-card">
+              <div class="key-doc-icon-wrap icon-wrap-purple">
+                <i class="bi bi-file-earmark-check-fill"></i>
+              </div>
+              <div class="key-doc-content">
+                <h3 class="key-doc-title">Trade Licence</h3>
+                <p class="key-doc-desc">Trade licence for our organization.</p>
+                <button
+                  type="button"
+                  class="btn-download-sm"
+                  onclick="openDocPreview('Trade Licence', 'assets/images/documents/doc-1.png')"
+                >
+                  <i class="bi bi-download"></i> Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Bank Account Details -->
+          <div class="col-md-6 col-lg-4">
+            <div class="key-doc-card">
+              <div class="key-doc-icon-wrap icon-wrap-teal">
+                <i class="bi bi-bank"></i>
+              </div>
+              <div class="key-doc-content">
+                <h3 class="key-doc-title">Bank Account Details</h3>
+                <p class="key-doc-desc">Our organization's bank account information.</p>
+                <button
+                  type="button"
+                  class="btn-download-sm"
+                  onclick="openDocPreview('Bank Account Details', 'assets/images/documents/doc-2.png')"
+                >
+                  <i class="bi bi-download"></i> Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Annual Report -->
+          <div class="col-md-6 col-lg-4">
+            <div class="key-doc-card">
+              <div class="key-doc-icon-wrap icon-wrap-chart">
+                <i class="bi bi-bar-chart-fill"></i>
+              </div>
+              <div class="key-doc-content">
+                <h3 class="key-doc-title">Annual Report</h3>
+                <p class="key-doc-desc">Our annual activity report.</p>
+                <button
+                  type="button"
+                  class="btn-download-sm"
+                  onclick="openDocPreview('Annual Report', 'assets/images/documents/doc-3.png')"
+                >
+                  <i class="bi bi-download"></i> Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 4. NEED MORE INFORMATION CTA BANNER ===== -->
+        <div class="licence-contact-banner">
+          <div class="banner-left-info">
+            <div class="banner-icon-box">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <div>
+              <h3 class="banner-title">Need More Information?</h3>
+              <p class="banner-subtitle">
+                Feel free to contact us for any kind of clarification regarding our licence or documents.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="contact.html" class="btn-banner-contact">
+              <i class="bi bi-send-fill"></i> Contact Us
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="py-5 page-documents">
-      <div class="container py-4">
-        <!-- TODO: add documents page content here -->
+    <!-- ===== DOCUMENT PREVIEW MODAL ===== -->
+    <div
+      class="modal fade"
+      id="documentModal"
+      tabindex="-1"
+      aria-labelledby="documentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <h5 class="modal-title mb-0" id="modalDocTitle">Document Preview</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center p-4">
+            <div class="p-3 bg-light rounded border mb-3">
+              <img
+                id="modalDocImg"
+                src=""
+                alt="Document Certificate"
+                class="img-fluid rounded shadow-sm"
+                style="max-height: 480px; width: auto;"
+              />
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+              <span class="badge bg-success-subtle text-success border border-success px-3 py-2">
+                <i class="bi bi-patch-check-fill me-1"></i> Verified Official Document
+              </span>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer-main">
@@ -187,11 +484,46 @@
             <div class="footer-social-wrap mt-3">
               <span class="footer-social-title">Connect With Us</span>
               <div class="social-links mt-2">
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-fb" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" class="social-yt" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-ig" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-li" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" class="social-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-fb"
+                  title="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-yt"
+                  title="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-ig"
+                  title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-li"
+                  title="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://wa.me/8801XXXXXXXXX"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-wa"
+                  title="WhatsApp"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -222,7 +554,9 @@
                 <a href="poverty.html">🌾 Sewing &amp; Rickshaws</a>
               </li>
               <li>
-                <a href="index.html#other-ways-to-donate">❤️ Sadaqah &amp; Zakat Fund</a>
+                <a href="index.html#other-ways-to-donate"
+                  >❤️ Sadaqah &amp; Zakat Fund</a
+                >
               </li>
             </ul>
           </div>
@@ -245,7 +579,9 @@
               </li>
               <li>
                 <i class="bi bi-envelope-fill"></i>
-                <a href="mailto:info@aloyfoundation.org">info@aloyfoundation.org</a>
+                <a href="mailto:info@aloyfoundation.org"
+                  >info@aloyfoundation.org</a
+                >
               </li>
               <li>
                 <i class="bi bi-clock-fill"></i>
@@ -261,7 +597,9 @@
           <div>
             © 2026 <strong>Aloy Foundation</strong>. All Rights Reserved.
           </div>
-          <div class="small">Govt NGO Affairs Bureau Reg: AF-2024/8912 | 100% Tax-Exempt</div>
+          <div class="small">
+            Govt NGO Affairs Bureau Reg: AF-2024/8912 | 100% Tax-Exempt
+          </div>
         </div>
       </div>
     </footer>
@@ -345,7 +683,12 @@
                     <img
                       src="assets/images/mfs/bkash.png"
                       alt="bKash"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">bKash</span>
@@ -356,7 +699,12 @@
                     <img
                       src="assets/images/mfs/nagad.png"
                       alt="Nagad"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">Nagad</span>
@@ -367,7 +715,12 @@
                     <img
                       src="assets/images/mfs/rocket.png"
                       alt="Rocket"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">Rocket</span>
@@ -456,7 +809,136 @@
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Document Preview Lightbox Modal Script -->
+    <script>
+      function openDocPreview(title, imageSrc) {
+        document.getElementById('modalDocTitle').innerText = title;
+        document.getElementById('modalDocImg').src = imageSrc;
+        const modal = new bootstrap.Modal(document.getElementById('documentModal'));
+        modal.show();
+      }
+    </script>
+
+    <!-- Google Translate Script -->
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,bn,ar,hi",
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+      }
+
+      function setGoogleTranslateCookie(lang) {
+        const host = window.location.hostname;
+        const domain = host.replace(/^www\./, "");
+
+        if (lang === "en") {
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+            host +
+            ";";
+          if (domain !== host) {
+            document.cookie =
+              "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." +
+              domain +
+              ";";
+          }
+        } else {
+          document.cookie = "googtrans=/en/" + lang + "; path=/;";
+          document.cookie =
+            "googtrans=/en/" + lang + "; domain=" + host + "; path=/;";
+          if (domain !== host) {
+            document.cookie =
+              "googtrans=/en/" + lang + "; domain=." + domain + "; path=/;";
+          }
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const languageSwitcher = document.getElementById("languageSwitcher");
+        if (!languageSwitcher) return;
+
+        const match = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
+        if (match && match[1]) {
+          languageSwitcher.value = match[1];
+        }
+
+        languageSwitcher.addEventListener("change", function () {
+          const selectedLang = this.value;
+          setGoogleTranslateCookie(selectedLang);
+
+          let attempts = 0;
+          const interval = setInterval(function () {
+            const googleSelect = document.querySelector(".goog-te-combo");
+            attempts++;
+
+            if (googleSelect) {
+              clearInterval(interval);
+              googleSelect.value = selectedLang;
+              googleSelect.dispatchEvent(
+                new Event("change", { bubbles: true }),
+              );
+            }
+
+            if (attempts >= 25) {
+              clearInterval(interval);
+              window.location.reload();
+            }
+          }, 100);
+        });
+      });
+
+      const cleanGoogleTranslateBanner = () => {
+        document
+          .querySelectorAll(
+            ".goog-te-banner-frame, iframe.goog-te-banner-frame, .goog-te-banner-frame.skiptranslate, iframe[id^=':'][id$='.container']",
+          )
+          .forEach(function (el) {
+            el.style.setProperty("display", "none", "important");
+            el.style.setProperty("visibility", "hidden", "important");
+          });
+
+        if (
+          document.body &&
+          document.body.style.top !== "0px" &&
+          document.body.style.top !== ""
+        ) {
+          document.body.style.setProperty("top", "0px", "important");
+        }
+      };
+
+      const toolbarObserver = new MutationObserver(cleanGoogleTranslateBanner);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        toolbarObserver.observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["style", "class"],
+        });
+      });
+
+      setInterval(function () {
+        if (
+          document.body &&
+          document.body.style.top !== "0px" &&
+          document.body.style.top !== ""
+        ) {
+          document.body.style.top = "0px";
+        }
+      }, 200);
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

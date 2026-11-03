@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impact Stories | Aloy Foundation</title>
+    <title>Impact Stories &amp; Field Updates | Aloy Foundation</title>
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,26 +23,27 @@
     <link rel="stylesheet" href="assets/css/pages/stories.css" />
   </head>
   <body class="lang-en">
+    <!-- ===== TOP BAR ===== -->
     <div class="top-bar">
       <div
         class="container d-flex flex-wrap justify-content-between align-items-center"
       >
         <div class="d-flex align-items-center gap-3">
-          <span class="d-none d-md-inline text-white-50"
-            ><i class="bi bi-shield-check text-warning me-1"></i>Govt NGO
-            Affairs Reg: AF-8912 | 100% Tax-Exempt</span
-          >
-          <span class="d-flex align-items-center gap-1"
-            ><i class="bi bi-telephone-fill text-warning"></i>
+          <span class="d-none d-md-inline text-white-50">
+            <i class="bi bi-shield-check text-warning me-1"></i>Govt NGO Affairs
+            Reg: AF-8912 | 100% Tax-Exempt
+          </span>
+          <span class="d-flex align-items-center gap-1">
+            <i class="bi bi-telephone-fill text-warning"></i>
             <a href="tel:+8809612345678" class="fw-semibold"
               >+880 9612-345678</a
-            ></span
-          >
+            >
+          </span>
         </div>
         <div class="language-switcher-container">
           <div class="language-select-wrapper">
             <span class="language-icon">
-              <i class="fas fa-globe"></i>
+              <i class="bi bi-globe"></i>
             </span>
             <select
               id="languageSwitcher"
@@ -55,7 +56,6 @@
               <option value="hi">हिन्दी</option>
             </select>
           </div>
-          <!-- Hidden Google Translate Element -->
           <div id="google_translate_element"></div>
         </div>
       </div>
@@ -74,15 +74,10 @@
             class="rounded"
           />
           <div class="d-flex flex-column">
-            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)"
-              >Aloy
-              <span style="color: var(--aloy-green-dark)"
-                >Foundation</span
-              ></span
-            >
-            <!-- <small class="text-muted fw-semibold" style="font-size: 0.72rem"
-                >Aloy Welfare Foundation Bangladesh</small
-              > -->
+            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)">
+              Aloy
+              <span style="color: var(--aloy-green-dark)">Foundation</span>
+            </span>
           </div>
         </a>
         <button
@@ -96,7 +91,7 @@
         <div class="collapse navbar-collapse" id="navMain">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -126,17 +121,17 @@
                 </li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="transparency.html">Transparency</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="documents.html"
-                  >Licenses &amp; Documents</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="stories.html">Impact Stories</a>
-              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="transparency.html">Transparency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html"
+                >Licenses &amp; Documents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="stories.html">Impact Stories</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -147,7 +142,7 @@
             data-bs-toggle="modal"
             data-bs-target="#donationModal"
           >
-            <i class="bi bi-heart-fill"></i> <span>Donate Now</span>
+            <span>Donate</span>
           </button>
         </div>
       </nav>
@@ -160,16 +155,462 @@
           <a href="index.html">Home</a> <span>/</span>
           <span>Impact Stories</span>
         </div>
-        <h1 class="page-hero-title">Impact Stories</h1>
-        <p class="page-hero-lead">Real stories from the people we serve.</p>
+        <h1 class="page-hero-title">Real Impact Stories &amp; Field Updates</h1>
+        <p class="page-hero-lead">
+          Stories of human resilience, renewed hope, and tangible transformation made possible by your generosity across Bangladesh.
+        </p>
       </div>
     </section>
 
+    <!-- ===== MAIN STORIES SECTION ===== -->
     <section class="py-5 page-stories">
-      <div class="container py-4">
-        <!-- TODO: add stories page content here -->
+      <div class="container py-3">
+        <!-- Section Header (Exact design like user's uploaded image) -->
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+          <div>
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-semibold small mb-2">
+              <i class="bi bi-stars me-1"></i> FIELD UPDATES
+            </span>
+            <h2 class="fw-bold text-dark fs-2 mb-1">News &amp; Stories</h2>
+            <p class="text-muted mb-0">Field work and the people behind it</p>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="stories-filter-wrapper mb-0">
+            <button class="story-filter-btn active" data-filter="all">
+              <i class="bi bi-grid-fill"></i> All Stories
+              <span class="badge">9</span>
+            </button>
+            <button class="story-filter-btn" data-filter="education">
+              <i class="bi bi-book"></i> Education
+              <span class="badge">2</span>
+            </button>
+            <button class="story-filter-btn" data-filter="healthcare">
+              <i class="bi bi-heart-pulse"></i> Healthcare
+              <span class="badge">2</span>
+            </button>
+            <button class="story-filter-btn" data-filter="livelihood">
+              <i class="bi bi-scissors"></i> Livelihood
+              <span class="badge">2</span>
+            </button>
+            <button class="story-filter-btn" data-filter="relief">
+              <i class="bi bi-tree"></i> Relief &amp; Tree
+              <span class="badge">3</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stories Cards Grid -->
+        <div class="row g-4" id="storiesGrid">
+          <!-- Story 1 (Card 1 from user image: Tree plantation / regular gifts) -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="relief">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/stories/1.jpg" alt="Tree Plantation and regular gifts" loading="lazy" />
+                <span class="m-tag">Tree Plantation</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Oct 12, 2026
+                </span>
+                <h3 class="m-title">
+                  Building a better society through small regular gifts
+                </h3>
+                <div class="m-subtitle-bn">
+                  নিয়মিত ক্ষুদ্র অনুদানে একটি সুন্দর আগামী গড়ার গল্প
+                </div>
+                <p class="m-text">
+                  How regular giving improves the lives of helpless people and children, funding community tree plantation and shelter support.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/stories/1.jpg',
+                    'Building a better society through small regular gifts',
+                    'নিয়মিত ক্ষুদ্র অনুদানে একটি সুন্দর আগামী গড়ার গল্প',
+                    'Oct 12, 2026',
+                    'Tree Plantation & Environment',
+                    'প্রতিমাসে ছোট ছোট অনুদান একত্রিত হয়ে কীভাবে গ্রামীণ পরিবেশে একটি টেকসই পরিবর্তন আনে, তার অনন্য উদাহরণ ফুলগাজী ও ফেনীর বৃক্ষরোপণ কর্মসূচি। আলোয় ফাউন্ডেশনের নিয়মিত দাতাদের সহায়তায় ইতিমধ্যে ৫,০০০ এর অধিক ফলদ ও বনজ বৃক্ষ রোপণ এবং দরিদ্র কৃষকদের মাঝে গাছের চারা বিতরণ করা হয়েছে। এর মাধ্যমে শুধু পরিবেশের ভারসাম্যই রক্ষা পাচ্ছে না, ভবিষ্যতে এই গাছগুলো দরিদ্র পরিবারগুলোর আর্থিক সুরক্ষাও নিশ্চিত করবে।',
+                    'ছোট ছোট উপহার যখন নিয়মিত জমা হয়, তখন তা এক বিশাল সম্ভাবনার মহাসড়ক তৈরি করে।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 2 (Card 2 from user image: Street children / regular donation box) -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="education">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/stories/2.jpg" alt="Street children dreams" loading="lazy" />
+                <span class="m-tag blue">Child Education</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Sep 28, 2026
+                </span>
+                <h3 class="m-title">
+                  From street children’s dreams to a highway of service
+                </h3>
+                <div class="m-subtitle-bn">
+                  পথশিশুদের স্বপ্ন থেকে সেবার আলোকবর্তিকা
+                </div>
+                <p class="m-text">
+                  The story of street children finding the light of education, and how Aloy began with a single classroom under the open sky.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/stories/2.jpg',
+                    'From street children’s dreams to a highway of service',
+                    'পথশিশুদের স্বপ্ন থেকে সেবার আলোকবর্তিকা',
+                    'Sep 28, 2026',
+                    'Child Education & School Feeding',
+                    'রাস্তার মোড়ে টোকাই হিসেবে বড় হতে থাকা শিশুদের খাতা-কলম ও পুষ্টিকর খাবারের ব্যবস্থা করে শিক্ষার মূলধারায় ফিরিয়ে আনা আলোয় ফাউন্ডেশনের অন্যতম প্রধান অঙ্গীকার। প্রতিদিনের স্কুল ফিডিং প্রোগ্রামের মাধ্যমে শিশুরা এখন স্কুলে নিয়মিত আসছে, নিজেদের স্বপ্ন দেখতে শিখছে এবং একটি মর্যাদাপূর্ণ ভবিষ্যতের পথে এগিয়ে যাচ্ছে।',
+                    'একটি শিশুর হাতে যখন ফুল আর খাতা তুলে দেওয়া হয়, তখন সমাজ থেকে এক টুকরো অন্ধকার মুছে যায়।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 3 (Card 3 from user image: One elder journey to self reliance) -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="livelihood">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/stories/3.jpg" alt="Journey to self reliance" loading="lazy" />
+                <span class="m-tag amber">Self Reliance</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Sep 5, 2026
+                </span>
+                <h3 class="m-title">
+                  One elder and one family’s journey to self-reliance
+                </h3>
+                <div class="m-subtitle-bn">
+                  একটি সেলাই মেশিনে এক পরিবারের স্বাবলম্বী হওয়ার গল্প
+                </div>
+                <p class="m-text">
+                  How a single heavy-duty sewing machine changed an elderly widow's household, ensuring dignified daily sustenance.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/stories/3.jpg',
+                    'One elder and one family’s journey to self-reliance',
+                    'একটি সেলাই মেশিনে এক পরিবারের স্বাবলম্বী হওয়ার গল্প',
+                    'Sep 5, 2026',
+                    'Livelihood & Self-Reliance',
+                    'স্বামীহারা অসহায় বৃদ্ধা রহিমা বেগম মানুষের দ্বারে দ্বারে হাত পাততেন। আলোয় ফাউন্ডেশনের জীবিকা প্রকল্পের মাধ্যমে তাকে একটি টেকসই সেলাই মেশিন ও কাপড় কাটার সরঞ্জাম প্রদান করা হয়। আজ তার মেয়ে এবং তিনি ঘরে বসেই প্রতিমাসে সম্মানজনক আয় করছেন। ভিক্ষাবৃত্তি ছেড়ে তারা আজ নিজেদের পায়ে দাঁড়িয়েছেন।',
+                    'দান নয়, একজন মানুষকে উপার্জনের পথ তৈরি করে দেওয়াই সবচেয়ে বড় মানবিকতা।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 4: Sultana's education -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="education">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/programs/1.jpg" alt="Child Education Program" loading="lazy" />
+                <span class="m-tag blue">Scholarship</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Aug 20, 2026
+                </span>
+                <h3 class="m-title">
+                  Sultana’s dream of becoming a doctor takes wing
+                </h3>
+                <div class="m-subtitle-bn">
+                  ঝরে পড়া থেকে ক্লাসের প্রথম সারিতে সুলতানার নতুন যাত্রা
+                </div>
+                <p class="m-text">
+                  Forced to leave school due to acute poverty, 10-year-old Sultana received free books, uniforms, and daily lunch through Aloy.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/programs/1.jpg',
+                    'Sultana’s dream of becoming a doctor takes wing',
+                    'ঝরে পড়া থেকে ক্লাসের প্রথম সারিতে সুলতানার নতুন যাত্রা',
+                    'Aug 20, 2026',
+                    'Education & Dropout Prevention',
+                    'বাবার অসুস্থতার কারণে পড়ালেখা বন্ধ হয়ে গিয়েছিল সুলতানার। আলোয় ফাউন্ডেশনের শিক্ষা স্পন্সরশিপের আওতায় তার বার্ষিক বেতন, পোশাক ও শিক্ষা উপকরণের দায়িত্ব গ্রহণ করা হয়। গত সমাপনী পরীক্ষায় সুলতানা শ্রেণীতে প্রথম স্থান অধিকার করেছে।',
+                    'দারিদ্র্যের কারণে যেন কোনো মেধাবী শিক্ষার্থীর পড়াশোনা বন্ধ না হয়।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 5: Free Eye Cataract Camps -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="healthcare">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/programs/2.jpg" alt="Free Medical and Eye Camp" loading="lazy" />
+                <span class="m-tag">Medical Camp</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Jul 14, 2026
+                </span>
+                <h3 class="m-title">
+                  Restoring vision to 45 rural elders in Char areas
+                </h3>
+                <div class="m-subtitle-bn">
+                  চরের ৪৫ জন প্রবীণের চোখের আলো ফিরিয়ে দেওয়ার গল্প
+                </div>
+                <p class="m-text">
+                  Free cataract replacement surgeries and medicine distribution gave back sight and independence to underprivileged villagers.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/programs/2.jpg',
+                    'Restoring vision to 45 rural elders in Char areas',
+                    'চরের ৪৫ জন প্রবীণের চোখের আলো ফিরিয়ে দেওয়ার গল্প',
+                    'Jul 14, 2026',
+                    'Healthcare & Free Eye Camps',
+                    'দূরবর্তী চরাঞ্চলে আধুনিক চক্ষু চিকিৎসার সুযোগ নেই বললেই চলে। আলোয় ফাউন্ডেশন বিশেষজ্ঞ সার্জনদের সহায়তায় একটি বিশেষ মেডিকেল ক্যাম্প আয়োজন করে এবং জটিল ছানি পড়া ৪৫ জন প্রবীণকে সম্পূর্ণ বিনামূল্যে লেন্স প্রতিস্থাপন অপারেশন ও ওষুধ উপহার দেয়।',
+                    'চোখের আলো ফিরে পাওয়া মানে নতুন একটি জীবন উপহার পাওয়া।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 6: Rickshaw Livelihood -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="livelihood">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/programs/3.jpg" alt="Rickshaw distribution" loading="lazy" />
+                <span class="m-tag amber">Rickshaw Grant</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Jun 30, 2026
+                </span>
+                <h3 class="m-title">
+                  From day laborer to rickshaw owner: Rahim's proud journey
+                </h3>
+                <div class="m-subtitle-bn">
+                  ভাড়া খাটা দিনমজুর থেকে নিজের রিকশার মালিক রহিম মিয়া
+                </div>
+                <p class="m-text">
+                  With an interest-free battery rickshaw grant, Rahim now earns ৳১,২০০ daily and sends his two daughters to school.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/programs/3.jpg',
+                    'From day laborer to rickshaw owner: Rahim\'s proud journey',
+                    'ভাড়া খাটা দিনমজুর থেকে নিজের রিকশার মালিক রহিম মিয়া',
+                    'Jun 30, 2026',
+                    'Poverty Alleviation & Livelihood',
+                    'প্রতিদিন ৪০০ টাকা রিকশার মহাজনকে ভাড়া দিয়ে রহিম মিয়ার পরিবারে নুন আনতে পান্থা ফুরাত। আলোয় ফাউন্ডেশন তাকে একটি নতুন ব্যাটারিচালিত রিকশা উপহার দেয়। এখন সম্পূর্ণ আয় তার নিজের থাকে, যার ফলে তিনি সন্তানদের স্কুলে পাঠানোর পাশাপাশি সঞ্চয়ও করছেন।',
+                    'একটি রিকশা শুধু একটি বাহন নয়, একটি পরিবারের মাথা উঁচু করে বাঁচার আত্মবিশ্বাস।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 7: Flood Relief -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="relief">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/news/1.jpg" alt="Emergency Flood Relief" loading="lazy" />
+                <span class="m-tag rose">Emergency Relief</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> May 18, 2026
+                </span>
+                <h3 class="m-title">
+                  Emergency flood relief delivered to 1,200 stranded families
+                </h3>
+                <div class="m-subtitle-bn">
+                  বন্যাদুর্গত এলাকায় ১,২০০ পরিবারের মাঝে জরুরি খাদ্য ও বিশুদ্ধ পানি
+                </div>
+                <p class="m-text">
+                  Clean drinking water, oral saline, dry rations, and medical first-aid teams reached isolated villages within 24 hours.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/news/1.jpg',
+                    'Emergency flood relief delivered to 1,200 stranded families',
+                    'বন্যাদুর্গত এলাকায় ১,২০০ পরিবারের মাঝে জরুরি খাদ্য ও বিশুদ্ধ পানি',
+                    'May 18, 2026',
+                    'Humanitarian Relief & Disaster Response',
+                    'আকস্মিক বন্যায় পানিবন্দি হয়ে পড়া মানুষের পাশে সবার আগে ছুটে যায় আলোয় ফাউন্ডেশনের উদ্ধারকারী দল। স্পিডবোট ও ট্রলারের মাধ্যমে প্রত্যন্ত চরে শুকনা খাবার, চাল, ডাল, বিশুদ্ধ খাবার পানি ও ওরস্যালাইন সরাসরি পৌঁছানো হয়।',
+                    'বিপদের মুহূর্তে দুর্গত মানুষের পাশে দাঁড়ানোই আমাদের সবচেয়ে বড় ধর্ম।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 8: Maternal and Infant Care -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="healthcare">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/programs/4.jpg" alt="Maternal healthcare" loading="lazy" />
+                <span class="m-tag">Maternal Health</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Apr 10, 2026
+                </span>
+                <h3 class="m-title">
+                  Free maternal health checkups &amp; prenatal nutrition kits
+                </h3>
+                <div class="m-subtitle-bn">
+                  গর্ভবতী মা ও নবজাতকদের জন্য পুষ্টি ও নিরাপদ প্রসব ক্যাম্প
+                </div>
+                <p class="m-text">
+                  Providing critical prenatal vitamins, ultrasound screenings, and safe delivery kits to over 250 expectant mothers.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/programs/4.jpg',
+                    'Free maternal health checkups & prenatal nutrition kits',
+                    'গর্ভবতী মা ও নবজাতকদের জন্য পুষ্টি ও নিরাপদ প্রসব ক্যাম্প',
+                    'Apr 10, 2026',
+                    'Healthcare & Maternal Nutrition',
+                    'গ্রামীণ দরিদ্র পরিবারের মায়েদের অপুষ্টি ও ঝুঁকিপূর্ণ প্রসব প্রতিরোধে নিয়মিত স্বাস্থ্য পরামর্শ ও পুষ্টি প্যাক বিতরণ করা হয়। বিশেষজ্ঞ গাইনী চিকিৎসকদের উপস্থিতিতে ২৫০+ প্রসূতি মাকে নিরাপদ প্রসবের জন্য প্রয়োজনীয় চিকিৎসাসেবা দেওয়া হয়েছে।',
+                    'একটি সুস্থ মা এবং একটি নিরাপদ শিশুই সমৃদ্ধ জাতির ভিত্তি।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Story 9: Winter Warmth -->
+          <div class="col-12 col-md-6 col-lg-4 story-item" data-category="relief">
+            <article class="m-card h-100">
+              <div class="m-media">
+                <img src="assets/images/banners/banner-1.jpg" alt="Winter Blanket Distribution" loading="lazy" />
+                <span class="m-tag purple">Winter Care</span>
+              </div>
+              <div class="m-body">
+                <span class="m-date">
+                  <i class="bi bi-calendar3"></i> Jan 15, 2026
+                </span>
+                <h3 class="m-title">
+                  Warmth for 3,000 cold-stricken northern families
+                </h3>
+                <div class="m-subtitle-bn">
+                  উত্তরাঞ্চলের ৩,০০০ দুস্থ পরিবারের মাঝে উষ্ণ ভালোবাসার কম্বল
+                </div>
+                <p class="m-text">
+                  Distributing high-density blankets and thermal clothing to street children and tea-garden laborers during biting cold.
+                </p>
+                <button
+                  type="button"
+                  class="m-link"
+                  onclick="openStoryModal(
+                    'assets/images/banners/banner-1.jpg',
+                    'Warmth for 3,000 cold-stricken northern families',
+                    'উত্তরাঞ্চলের ৩,০০০ দুস্থ পরিবারের মাঝে উষ্ণ ভালোবাসার কম্বল',
+                    'Jan 15, 2026',
+                    'Seasonal Relief & Winter Support',
+                    'কুড়িগ্রাম, পঞ্চগড় ও উত্তরের হিমশীতল জনপদে প্রতি বছর তীব্র শীতে অসহায় মানুষ কষ্ট পায়। আলোয় ফাউন্ডেশনের সদস্যরা বাড়ি বাড়ি গিয়ে ছিন্নমূল শিশু, প্রবীণ ও চা শ্রমিকদের হাতে উষ্ণ কম্বল এবং শীতের কাপড় তুলে দেন।',
+                    'ভালোবাসার উষ্ণতা শীতের কনকনে ঠান্ডাকেও জয় করতে পারে।'
+                  )"
+                >
+                  View Details <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ===== STORY DETAILS MODAL ===== -->
+    <div
+      class="modal fade"
+      id="storyModal"
+      tabindex="-1"
+      aria-labelledby="storyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-primary px-3 py-2" id="modalStoryTag"></span>
+              <span class="text-muted small" id="modalStoryDate"></span>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-story-img-wrap">
+              <img id="modalStoryImg" src="" alt="Story Image" />
+            </div>
+            <h3 class="fw-bold text-dark fs-4 mb-1" id="modalStoryTitle"></h3>
+            <div class="text-primary fw-semibold mb-3" id="modalStorySubtitleBn"></div>
+
+            <p class="text-muted" style="line-height: 1.7;" id="modalStoryDesc"></p>
+
+            <div class="story-quote-box" id="modalStoryQuote"></div>
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mt-4 pt-3 border-top">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn-aloy-donate py-2 px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#donationModal"
+              >
+                <i class="bi bi-heart-fill me-1 text-danger"></i>
+                <span>Support This Project</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer-main">
@@ -187,11 +628,46 @@
             <div class="footer-social-wrap mt-3">
               <span class="footer-social-title">Connect With Us</span>
               <div class="social-links mt-2">
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-fb" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" class="social-yt" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-ig" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-li" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" class="social-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-fb"
+                  title="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-yt"
+                  title="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-ig"
+                  title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-li"
+                  title="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://wa.me/8801XXXXXXXXX"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-wa"
+                  title="WhatsApp"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -222,7 +698,9 @@
                 <a href="poverty.html">🌾 Sewing &amp; Rickshaws</a>
               </li>
               <li>
-                <a href="index.html#other-ways-to-donate">❤️ Sadaqah &amp; Zakat Fund</a>
+                <a href="index.html#other-ways-to-donate"
+                  >❤️ Sadaqah &amp; Zakat Fund</a
+                >
               </li>
             </ul>
           </div>
@@ -245,7 +723,9 @@
               </li>
               <li>
                 <i class="bi bi-envelope-fill"></i>
-                <a href="mailto:info@aloyfoundation.org">info@aloyfoundation.org</a>
+                <a href="mailto:info@aloyfoundation.org"
+                  >info@aloyfoundation.org</a
+                >
               </li>
               <li>
                 <i class="bi bi-clock-fill"></i>
@@ -261,7 +741,9 @@
           <div>
             © 2026 <strong>Aloy Foundation</strong>. All Rights Reserved.
           </div>
-          <div class="small">Govt NGO Affairs Bureau Reg: AF-2024/8912 | 100% Tax-Exempt</div>
+          <div class="small">
+            Govt NGO Affairs Bureau Reg: AF-2024/8912 | 100% Tax-Exempt
+          </div>
         </div>
       </div>
     </footer>
@@ -345,7 +827,12 @@
                     <img
                       src="assets/images/mfs/bkash.png"
                       alt="bKash"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">bKash</span>
@@ -356,7 +843,12 @@
                     <img
                       src="assets/images/mfs/nagad.png"
                       alt="Nagad"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">Nagad</span>
@@ -367,7 +859,12 @@
                     <img
                       src="assets/images/mfs/rocket.png"
                       alt="Rocket"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">Rocket</span>
@@ -456,7 +953,172 @@
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Page Specific Script for Filter & Story Modal -->
+    <script>
+      function openStoryModal(imageSrc, title, subtitleBn, date, tag, desc, quote) {
+        document.getElementById('modalStoryImg').src = imageSrc;
+        document.getElementById('modalStoryTitle').innerText = title;
+        document.getElementById('modalStorySubtitleBn').innerText = subtitleBn;
+        document.getElementById('modalStoryDate').innerHTML = '<i class="bi bi-calendar3 me-1"></i> ' + date;
+        document.getElementById('modalStoryTag').innerText = tag;
+        document.getElementById('modalStoryDesc').innerText = desc;
+        document.getElementById('modalStoryQuote').innerHTML = '<i class="bi bi-quote fs-4 me-1"></i> "' + quote + '"';
+
+        const storyModal = new bootstrap.Modal(document.getElementById('storyModal'));
+        storyModal.show();
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Filter Buttons Functionality
+        const filterBtns = document.querySelectorAll('.story-filter-btn');
+        const storyItems = document.querySelectorAll('.story-item');
+
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function () {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filterValue = this.getAttribute('data-filter');
+
+            storyItems.forEach(item => {
+              if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                item.style.display = 'block';
+                item.style.animation = 'fadeInStory 0.25s ease forwards';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+    <style>
+      @keyframes fadeInStory {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+
+    <!-- Google Translate Script -->
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,bn,ar,hi",
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+      }
+
+      function setGoogleTranslateCookie(lang) {
+        const host = window.location.hostname;
+        const domain = host.replace(/^www\./, "");
+
+        if (lang === "en") {
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+            host +
+            ";";
+          if (domain !== host) {
+            document.cookie =
+              "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." +
+              domain +
+              ";";
+          }
+        } else {
+          document.cookie = "googtrans=/en/" + lang + "; path=/;";
+          document.cookie =
+            "googtrans=/en/" + lang + "; domain=" + host + "; path=/;";
+          if (domain !== host) {
+            document.cookie =
+              "googtrans=/en/" + lang + "; domain=." + domain + "; path=/;";
+          }
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const languageSwitcher = document.getElementById("languageSwitcher");
+        if (!languageSwitcher) return;
+
+        const match = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
+        if (match && match[1]) {
+          languageSwitcher.value = match[1];
+        }
+
+        languageSwitcher.addEventListener("change", function () {
+          const selectedLang = this.value;
+          setGoogleTranslateCookie(selectedLang);
+
+          let attempts = 0;
+          const interval = setInterval(function () {
+            const googleSelect = document.querySelector(".goog-te-combo");
+            attempts++;
+
+            if (googleSelect) {
+              clearInterval(interval);
+              googleSelect.value = selectedLang;
+              googleSelect.dispatchEvent(
+                new Event("change", { bubbles: true }),
+              );
+            }
+
+            if (attempts >= 25) {
+              clearInterval(interval);
+              window.location.reload();
+            }
+          }, 100);
+        });
+      });
+
+      const cleanGoogleTranslateBanner = () => {
+        document
+          .querySelectorAll(
+            ".goog-te-banner-frame, iframe.goog-te-banner-frame, .goog-te-banner-frame.skiptranslate, iframe[id^=':'][id$='.container']",
+          )
+          .forEach(function (el) {
+            el.style.setProperty("display", "none", "important");
+            el.style.setProperty("visibility", "hidden", "important");
+          });
+
+        if (
+          document.body &&
+          document.body.style.top !== "0px" &&
+          document.body.style.top !== ""
+        ) {
+          document.body.style.setProperty("top", "0px", "important");
+        }
+      };
+
+      const toolbarObserver = new MutationObserver(cleanGoogleTranslateBanner);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        toolbarObserver.observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["style", "class"],
+        });
+      });
+
+      setInterval(function () {
+        if (
+          document.body &&
+          document.body.style.top !== "0px" &&
+          document.body.style.top !== ""
+        ) {
+          document.body.style.top = "0px";
+        }
+      }, 200);
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

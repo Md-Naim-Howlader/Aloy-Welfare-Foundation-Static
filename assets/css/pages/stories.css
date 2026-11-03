@@ -1,2 +1,226 @@
-/* STORIES PAGE ONLY */
-.page-stories{min-height:200px}
+/* ================================================================
+   ALOY WELFARE FOUNDATION - IMPACT STORIES PAGE STYLES
+   ================================================================ */
+
+.page-stories {
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 300px);
+  min-height: 500px;
+}
+
+/* Category Filter Pills */
+.stories-filter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.story-filter-btn {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.story-filter-btn:hover {
+  background: #f8fafc;
+  color: #0284c7;
+  border-color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+.story-filter-btn.active {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+}
+
+.story-filter-btn .badge {
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.story-filter-btn.active .badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Modern Story Cards (m-card) */
+.m-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+.m-card:hover {
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
+  transform: translateY(-4px);
+}
+
+.m-media {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.m-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.m-card:hover .m-media img {
+  transform: scale(1.06);
+}
+
+.m-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.m-tag.blue { background: #0284c7; }
+.m-tag.purple { background: #7e22ce; }
+.m-tag.amber { background: #d97706; }
+.m-tag.rose { background: #e11d48; }
+
+.m-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px 24px;
+}
+
+.m-date {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.m-date i {
+  color: #0284c7;
+}
+
+.m-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.m-subtitle-bn {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0284c7;
+  margin-bottom: 10px;
+}
+
+.m-text {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.m-link {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0284c7;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.m-link:hover,
+.m-card:hover .m-link {
+  color: #0369a1;
+  transform: translateX(4px);
+}
+
+/* Story Modal Customization */
+#storyModal .modal-content {
+  border-radius: 18px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.25);
+}
+
+#storyModal .modal-header {
+  border-bottom: 1px solid #f1f5f9;
+  padding: 18px 24px;
+}
+
+#storyModal .modal-body {
+  padding: 24px;
+}
+
+.modal-story-img-wrap {
+  width: 100%;
+  max-height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.modal-story-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-quote-box {
+  background: #f0f9ff;
+  border-left: 4px solid #0284c7;
+  padding: 14px 18px;
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+  color: #0369a1;
+  margin: 18px 0;
+}

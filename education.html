@@ -23,26 +23,28 @@
     <link rel="stylesheet" href="assets/css/pages/education.css" />
   </head>
   <body class="lang-en">
+    <!-- ===== TOP BAR  ===== -->
+    <!-- ===== TOP BAR ===== -->
     <div class="top-bar">
       <div
         class="container d-flex flex-wrap justify-content-between align-items-center"
       >
         <div class="d-flex align-items-center gap-3">
-          <span class="d-none d-md-inline text-white-50"
-            ><i class="bi bi-shield-check text-warning me-1"></i>Govt NGO
-            Affairs Reg: AF-8912 | 100% Tax-Exempt</span
-          >
-          <span class="d-flex align-items-center gap-1"
-            ><i class="bi bi-telephone-fill text-warning"></i>
+          <span class="d-none d-md-inline text-white-50">
+            <i class="bi bi-shield-check text-warning me-1"></i>Govt NGO Affairs
+            Reg: AF-8912 | 100% Tax-Exempt
+          </span>
+          <span class="d-flex align-items-center gap-1">
+            <i class="bi bi-telephone-fill text-warning"></i>
             <a href="tel:+8809612345678" class="fw-semibold"
               >+880 9612-345678</a
-            ></span
-          >
+            >
+          </span>
         </div>
         <div class="language-switcher-container">
           <div class="language-select-wrapper">
             <span class="language-icon">
-              <i class="fas fa-globe"></i>
+              <i class="bi bi-globe"></i>
             </span>
             <select
               id="languageSwitcher"
@@ -55,7 +57,6 @@
               <option value="hi">हिन्दी</option>
             </select>
           </div>
-          <!-- Hidden Google Translate Element -->
           <div id="google_translate_element"></div>
         </div>
       </div>
@@ -74,15 +75,10 @@
             class="rounded"
           />
           <div class="d-flex flex-column">
-            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)"
-              >Aloy
-              <span style="color: var(--aloy-green-dark)"
-                >Foundation</span
-              ></span
-            >
-            <!-- <small class="text-muted fw-semibold" style="font-size: 0.72rem"
-                >Aloy Welfare Foundation Bangladesh</small
-              > -->
+            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)">
+              Aloy
+              <span style="color: var(--aloy-green-dark)">Foundation</span>
+            </span>
           </div>
         </a>
         <button
@@ -96,7 +92,7 @@
         <div class="collapse navbar-collapse" id="navMain">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -126,17 +122,17 @@
                 </li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="transparency.html">Transparency</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="documents.html"
-                  >Licenses &amp; Documents</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="stories.html">Impact Stories</a>
-              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="transparency.html">Transparency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="documents.html"
+                >Licenses &amp; Documents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stories.html">Impact Stories</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -147,7 +143,7 @@
             data-bs-toggle="modal"
             data-bs-target="#donationModal"
           >
-            <i class="bi bi-heart-fill"></i> <span>Donate Now</span>
+            <span>Donate</span>
           </button>
         </div>
       </nav>
@@ -189,11 +185,46 @@
             <div class="footer-social-wrap mt-3">
               <span class="footer-social-title">Connect With Us</span>
               <div class="social-links mt-2">
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-fb" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" class="social-yt" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-ig" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-li" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" class="social-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-fb"
+                  title="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-yt"
+                  title="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-ig"
+                  title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-li"
+                  title="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://wa.me/8801XXXXXXXXX"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-wa"
+                  title="WhatsApp"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -224,7 +255,9 @@
                 <a href="poverty.html">🌾 Sewing &amp; Rickshaws</a>
               </li>
               <li>
-                <a href="index.html#other-ways-to-donate">❤️ Sadaqah &amp; Zakat Fund</a>
+                <a href="index.html#other-ways-to-donate"
+                  >❤️ Sadaqah &amp; Zakat Fund</a
+                >
               </li>
             </ul>
           </div>
@@ -247,7 +280,9 @@
               </li>
               <li>
                 <i class="bi bi-envelope-fill"></i>
-                <a href="mailto:info@aloyfoundation.org">info@aloyfoundation.org</a>
+                <a href="mailto:info@aloyfoundation.org"
+                  >info@aloyfoundation.org</a
+                >
               </li>
               <li>
                 <i class="bi bi-clock-fill"></i>
@@ -263,7 +298,9 @@
           <div>
             © 2026 <strong>Aloy Foundation</strong>. All Rights Reserved.
           </div>
-          <div class="small">Govt NGO Affairs Bureau Reg: AF-2024/8912 | 100% Tax-Exempt</div>
+          <div class="small">
+            Govt NGO Affairs Bureau Reg: AF-2024/8912 | 100% Tax-Exempt
+          </div>
         </div>
       </div>
     </footer>
@@ -347,7 +384,12 @@
                     <img
                       src="assets/images/mfs/bkash.png"
                       alt="bKash"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">bKash</span>
@@ -358,7 +400,12 @@
                     <img
                       src="assets/images/mfs/nagad.png"
                       alt="Nagad"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">Nagad</span>
@@ -369,7 +416,12 @@
                     <img
                       src="assets/images/mfs/rocket.png"
                       alt="Rocket"
-                      style="height: 20px; width: 20px; object-fit: contain; margin-bottom: 2px;"
+                      style="
+                        height: 20px;
+                        width: 20px;
+                        object-fit: contain;
+                        margin-bottom: 2px;
+                      "
                       class="mx-auto d-block"
                     />
                     <span class="fw-bold d-block">Rocket</span>
@@ -460,5 +512,135 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      // ১. Google Translate Initialization
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,bn,ar,hi",
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+      }
+
+      // ২. কুকি সেট ও ক্লিয়ার করার হেল্পার ফাংশন
+      function setGoogleTranslateCookie(lang) {
+        const host = window.location.hostname;
+        const domain = host.replace(/^www\./, "");
+
+        if (lang === "en") {
+          // মূল ভাষায় (English) ফিরলে কুকি ক্লিয়ার করুন
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+            host +
+            ";";
+          if (domain !== host) {
+            document.cookie =
+              "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." +
+              domain +
+              ";";
+          }
+        } else {
+          // নির্বাচিত ভাষার কুকি সেট করুন
+          document.cookie = "googtrans=/en/" + lang + "; path=/;";
+          document.cookie =
+            "googtrans=/en/" + lang + "; domain=" + host + "; path=/;";
+          if (domain !== host) {
+            document.cookie =
+              "googtrans=/en/" + lang + "; domain=." + domain + "; path=/;";
+          }
+        }
+      }
+
+      // ৩. ড্রপডাউন হ্যান্ডলার এবং সিঙ্ক লজিক
+      document.addEventListener("DOMContentLoaded", function () {
+        const languageSwitcher = document.getElementById("languageSwitcher");
+        if (!languageSwitcher) return;
+
+        // আগে কোনো ভাষা সিলেক্ট করা থাকলে পেজ লোডে ড্রপডাউনে তা ঠিক রাখা
+        const match = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
+        if (match && match[1]) {
+          languageSwitcher.value = match[1];
+        }
+
+        // ভাষা পরিবর্তন ইভেন্ট
+        languageSwitcher.addEventListener("change", function () {
+          const selectedLang = this.value;
+
+          // কুকি সেট করুন
+          setGoogleTranslateCookie(selectedLang);
+
+          let attempts = 0;
+          const interval = setInterval(function () {
+            const googleSelect = document.querySelector(".goog-te-combo");
+            attempts++;
+
+            if (googleSelect) {
+              clearInterval(interval);
+              googleSelect.value = selectedLang;
+              googleSelect.dispatchEvent(
+                new Event("change", { bubbles: true }),
+              );
+            }
+
+            // নেটওয়ার্ক স্লো হলে বা গুগল কম্বো না পাওয়া গেলে রিলোড দিয়ে ট্রান্সলেট নিশ্চিত করা
+            if (attempts >= 25) {
+              clearInterval(interval);
+              window.location.reload();
+            }
+          }, 100);
+        });
+      });
+
+      // ৪. টপ ব্যানার হাইড রাখা ও বডি ফিক্স
+      const cleanGoogleTranslateBanner = () => {
+        document
+          .querySelectorAll(
+            ".goog-te-banner-frame, iframe.goog-te-banner-frame, .goog-te-banner-frame.skiptranslate, iframe[id^=':'][id$='.container']",
+          )
+          .forEach(function (el) {
+            el.style.setProperty("display", "none", "important");
+            el.style.setProperty("visibility", "hidden", "important");
+          });
+
+        if (
+          document.body &&
+          document.body.style.top !== "0px" &&
+          document.body.style.top !== ""
+        ) {
+          document.body.style.setProperty("top", "0px", "important");
+        }
+      };
+
+      const toolbarObserver = new MutationObserver(cleanGoogleTranslateBanner);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        toolbarObserver.observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["style", "class"],
+        });
+      });
+
+      // গুগল যেন কোনোভাবেই বডি পুশ করতে না পারে
+      setInterval(function () {
+        if (
+          document.body &&
+          document.body.style.top !== "0px" &&
+          document.body.style.top !== ""
+        ) {
+          document.body.style.top = "0px";
+        }
+      }, 200);
+    </script>
+    <!-- Google Translate API -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
