@@ -48,26 +48,26 @@
             class="topbar-donor-link"
           >
             <i class="bi bi-person-fill text-warning"></i>
-            <span>Donor Login / Register</span>
+            <span>Login / Register</span>
           </a>
           <div class="language-switcher-container">
-          <div class="language-select-wrapper">
-            <span class="language-icon">
-              <i class="bi bi-globe"></i>
-            </span>
-            <select
-              id="languageSwitcher"
-              class="language-select"
-              aria-label="Select Language"
-            >
-              <option value="en" selected>English</option>
-              <option value="bn">বাংলা</option>
-              <option value="ar">العربية</option>
-              <option value="hi">हिन्दी</option>
-            </select>
+            <div class="language-select-wrapper">
+              <span class="language-icon">
+                <i class="bi bi-globe"></i>
+              </span>
+              <select
+                id="languageSwitcher"
+                class="language-select"
+                aria-label="Select Language"
+              >
+                <option value="en" selected>English</option>
+                <option value="bn">বাংলা</option>
+                <option value="ar">العربية</option>
+                <option value="hi">हिन्दी</option>
+              </select>
+            </div>
+            <div id="google_translate_element"></div>
           </div>
-          <div id="google_translate_element"></div>
-        </div>
         </div>
       </div>
     </div>
@@ -102,38 +102,42 @@
         <div class="collapse navbar-collapse" id="navMain">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 href="#"
                 data-bs-toggle="dropdown"
-                >Our Programs</a
+                >Programs</a
               >
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item fw-bold" href="all_porgrams.html"
-                    >🌟 All Programs &amp; Projects</a
+                    ><i class="bi bi-grid-fill text-success me-2"></i>All
+                    Programs &amp; Projects</a
                   >
                 </li>
-                <li><hr class="dropdown-divider"></li>
+                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="education.html"
-                    >📚 Education Program</a
+                  <a class="dropdown-item" href="project_details.html"
+                    ><i class="bi bi-book-half text-success me-2"></i>Education
+                    Program</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="healthcare.html"
-                    >🩺 Healthcare Services</a
+                    ><i class="bi bi-heart-pulse-fill text-danger me-2"></i
+                    >Healthcare Services</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="poverty.html"
-                    >🌾 Poverty Alleviation</a
+                    ><i class="bi bi-briefcase-fill text-primary me-2"></i
+                    >Poverty Alleviation</a
                   >
                 </li>
               </ul>
@@ -142,12 +146,10 @@
               <a class="nav-link" href="transparency.html">Transparency</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="documents.html"
-                >Licenses &amp; Documents</a
-              >
+              <a class="nav-link" href="documents.html">Cetifications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="stories.html">Impact Stories</a>
+              <a class="nav-link" href="stories.html">News & Stories</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -161,7 +163,7 @@
               data-bs-target="#donorAuthModal"
             >
               <i class="bi bi-person-circle"></i>
-              <span>Donor Login</span>
+              <span>Login</span>
             </button>
             <button
               type="button"
@@ -169,7 +171,7 @@
               data-bs-toggle="modal"
               data-bs-target="#donationModal"
             >
-            <span>Donate</span>
+              <span>Donate</span>
             </button>
           </div>
         </div>
@@ -180,13 +182,19 @@
     <section class="page-hero">
       <div class="container">
         <div class="page-breadcrumb">
-          <a href="index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a> <span>/</span>
-          <span>Our Programs</span> <span>/</span>
+          <a href="index.html"
+            ><i class="bi bi-house-door-fill me-1"></i> Home</a
+          >
+          <span>/</span> <span>Our Programs</span> <span>/</span>
           <span>All Programs &amp; Projects</span>
         </div>
-        <h1 class="page-hero-title">Our Projects &amp; Humanitarian Programs</h1>
+        <h1 class="page-hero-title">
+          Our Projects &amp; Humanitarian Programs
+        </h1>
         <p class="page-hero-lead">
-          Transparent, sustainable, and impact-driven interventions providing quality education, healthcare, and economic self-reliance across Bangladesh.
+          Transparent, sustainable, and impact-driven interventions providing
+          quality education, healthcare, and economic self-reliance across
+          Bangladesh.
         </p>
       </div>
     </section>
@@ -207,7 +215,10 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="theme-card text-center p-4">
-              <div class="theme-icon-wrap mx-auto" style="background: #fef3c7; color: #d97706;">
+              <div
+                class="theme-icon-wrap mx-auto"
+                style="background: #fef3c7; color: #d97706"
+              >
                 <i class="bi bi-heart-pulse-fill"></i>
               </div>
               <h4 class="fw-bold mb-1">120,000+</h4>
@@ -216,7 +227,10 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="theme-card text-center p-4">
-              <div class="theme-icon-wrap mx-auto" style="background: #f3e8ff; color: #9333ea;">
+              <div
+                class="theme-icon-wrap mx-auto"
+                style="background: #f3e8ff; color: #9333ea"
+              >
                 <i class="bi bi-people-fill"></i>
               </div>
               <h4 class="fw-bold mb-1">8,200+</h4>
@@ -225,7 +239,10 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="theme-card text-center p-4">
-              <div class="theme-icon-wrap mx-auto" style="background: #e0f2fe; color: #0284c7;">
+              <div
+                class="theme-icon-wrap mx-auto"
+                style="background: #e0f2fe; color: #0284c7"
+              >
                 <i class="bi bi-shield-check"></i>
               </div>
               <h4 class="fw-bold mb-1">100% Free</h4>
@@ -239,9 +256,12 @@
           <span class="theme-badge">
             <i class="bi bi-stars"></i> EXPLORE ALL INITIATIVES
           </span>
-          <h2 class="fw-bold text-dark fs-2">Active Field Programs Across Bangladesh</h2>
+          <h2 class="fw-bold text-dark fs-2">
+            Active Field Programs Across Bangladesh
+          </h2>
           <p class="text-muted">
-            মানুষের মৌলিক অধিকার রক্ষা ও স্থায়ী আত্মনির্ভরশীলতা অর্জনে আমাদের নিয়মিত কার্যক্রমসমূহ নিচে তুলে ধরা হলো:
+            মানুষের মৌলিক অধিকার রক্ষা ও স্থায়ী আত্মনির্ভরশীলতা অর্জনে আমাদের
+            নিয়মিত কার্যক্রমসমূহ নিচে তুলে ধরা হলো:
           </p>
         </div>
 
@@ -272,29 +292,45 @@
         <!-- Programs Grid -->
         <div class="row g-4" id="programsGrid">
           <!-- Program 1: Education & School Feeding -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="education">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="education"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/programs/1.jpg" alt="Education & School Feeding" loading="lazy" />
+                  <img
+                    src="assets/images/programs/1.jpg"
+                    alt="Education & School Feeding"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag blue">Education</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Education &amp; School Feeding Program</a>
+                  <a href="project_details.html"
+                    >Education &amp; School Feeding Program</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   ঝরে পড়া রোধ ও দৈনিক পুষ্টিকর আহার কর্মসূচি
                 </div>
                 <p class="program-grid-text">
-                  Nutritious hot meals, textbooks, stationery, and comprehensive learning support to keep children in classrooms.
+                  Nutritious hot meals, textbooks, stationery, and comprehensive
+                  learning support to keep children in classrooms.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="education">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="education"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -303,29 +339,46 @@
           </div>
 
           <!-- Program 2: Higher Education Scholarship -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="education">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="education"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/stories/2.jpg" alt="University Scholarships" loading="lazy" />
+                  <img
+                    src="assets/images/stories/2.jpg"
+                    alt="University Scholarships"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag blue">Scholarships</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Alor Dishari Higher Education Scholarships</a>
+                  <a href="project_details.html"
+                    >Alor Dishari Higher Education Scholarships</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   মেধাবী সুবিধাবঞ্চিত শিক্ষার্থীদের বিশ্ববিদ্যালয় বৃত্তি
                 </div>
                 <p class="program-grid-text">
-                  Covering semester fees, books, and monthly stipends for underprivileged students pursuing college and university degrees.
+                  Covering semester fees, books, and monthly stipends for
+                  underprivileged students pursuing college and university
+                  degrees.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="education">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="education"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -334,29 +387,45 @@
           </div>
 
           <!-- Program 3: Free Medical Camps -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="healthcare">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="healthcare"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/programs/2.jpg" alt="Free Medical Camps" loading="lazy" />
+                  <img
+                    src="assets/images/programs/2.jpg"
+                    alt="Free Medical Camps"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag rose">Healthcare</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Free Medical Camps &amp; Mobile Clinics</a>
+                  <a href="project_details.html"
+                    >Free Medical Camps &amp; Mobile Clinics</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   চরাঞ্চলে বিশেষজ্ঞ চিকিৎসাসেবা ও বিনামূল্যে ওষুধ
                 </div>
                 <p class="program-grid-text">
-                  Specialist MBBS doctors, blood testing, diagnostics, and full courses of medicine for remote char &amp; coastal communities.
+                  Specialist MBBS doctors, blood testing, diagnostics, and full
+                  courses of medicine for remote char &amp; coastal communities.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="healthcare">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="healthcare"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -365,29 +434,45 @@
           </div>
 
           <!-- Program 4: Cataract Eye Surgeries -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="healthcare">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="healthcare"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/programs/6.jpg" alt="Cataract Eye Surgery" loading="lazy" />
+                  <img
+                    src="assets/images/programs/6.jpg"
+                    alt="Cataract Eye Surgery"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag rose">Vision Care</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Free Cataract Surgery &amp; Vision Care</a>
+                  <a href="project_details.html"
+                    >Free Cataract Surgery &amp; Vision Care</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   বিনামূল্যে ছানি অপারেশন ও দৃষ্টিশক্তি পুনর্বাসন
                 </div>
                 <p class="program-grid-text">
-                  Phaco surgeries with intraocular lens implants restoring sight to elderly villagers completely free of charge.
+                  Phaco surgeries with intraocular lens implants restoring sight
+                  to elderly villagers completely free of charge.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="healthcare">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="healthcare"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -396,29 +481,45 @@
           </div>
 
           <!-- Program 5: Sewing Machines & Women Empowerment -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="livelihood">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="livelihood"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/programs/3.jpg" alt="Sewing Machines" loading="lazy" />
+                  <img
+                    src="assets/images/programs/3.jpg"
+                    alt="Sewing Machines"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag amber">Self-Reliance</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Women Empowerment with Sewing Machines</a>
+                  <a href="project_details.html"
+                    >Women Empowerment with Sewing Machines</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   সেলাই প্রশিক্ষণ ও নারীদের স্বাবলম্বীকরণ কর্মসূচি
                 </div>
                 <p class="program-grid-text">
-                  Training rural widows and unemployed women in tailoring and gifting brand-new machines for dignified livelihood.
+                  Training rural widows and unemployed women in tailoring and
+                  gifting brand-new machines for dignified livelihood.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="poverty">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="poverty"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -427,29 +528,45 @@
           </div>
 
           <!-- Program 6: Rickshaw & Utility Van Grants -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="livelihood">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="livelihood"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/stories/3.jpg" alt="Rickshaw Distribution" loading="lazy" />
+                  <img
+                    src="assets/images/stories/3.jpg"
+                    alt="Rickshaw Distribution"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag amber">Livelihood</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Rickshaw &amp; Utility Cargo Van Grants</a>
+                  <a href="project_details.html"
+                    >Rickshaw &amp; Utility Cargo Van Grants</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   দিনমজুরদের রিকশা ও মালামাল পরিবহন ভ্যান উপহার
                 </div>
                 <p class="program-grid-text">
-                  Handing over free asset ownership of battery-run rickshaws and utility vans, multiplying daily income without debt.
+                  Handing over free asset ownership of battery-run rickshaws and
+                  utility vans, multiplying daily income without debt.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="poverty">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="poverty"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -458,29 +575,45 @@
           </div>
 
           <!-- Program 7: Emergency Flood & Cyclone Relief -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="relief">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="relief"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/programs/4.jpg" alt="Emergency Relief" loading="lazy" />
+                  <img
+                    src="assets/images/programs/4.jpg"
+                    alt="Emergency Relief"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag purple">Disaster Relief</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Emergency Flood &amp; Disaster Relief</a>
+                  <a href="project_details.html"
+                    >Emergency Flood &amp; Disaster Relief</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   বন্যা ও নদীভাঙনে জরুরি খাদ্য, বস্ত্র ও পুনর্বাসন
                 </div>
                 <p class="program-grid-text">
-                  Rapid humanitarian rescue, cooked food, dry rations, clean drinking water, and permanent raised tin-shed homes.
+                  Rapid humanitarian rescue, cooked food, dry rations, clean
+                  drinking water, and permanent raised tin-shed homes.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="general">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="general"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -489,29 +622,45 @@
           </div>
 
           <!-- Program 8: Green Roots Tree Plantation -->
-          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="relief">
+          <div
+            class="col-12 col-md-6 col-lg-4 prog-item"
+            data-category="relief"
+          >
             <div class="program-grid-card">
               <div class="program-grid-media">
                 <a href="project_details.html">
-                  <img src="assets/images/stories/1.jpg" alt="Tree Plantation" loading="lazy" />
+                  <img
+                    src="assets/images/stories/1.jpg"
+                    alt="Tree Plantation"
+                    loading="lazy"
+                  />
                 </a>
                 <span class="program-grid-tag">Environment</span>
               </div>
               <div class="program-grid-body">
                 <h3 class="program-grid-title">
-                  <a href="project_details.html">Green Roots Tree Plantation &amp; Climate Action</a>
+                  <a href="project_details.html"
+                    >Green Roots Tree Plantation &amp; Climate Action</a
+                  >
                 </h3>
                 <div class="program-grid-subtitle">
                   উপকূলীয় বাঁধ রক্ষা ও ফলদ-বনজ বৃক্ষরোপণ কর্মসূচি
                 </div>
                 <p class="program-grid-text">
-                  Planting thousands of native fruit and timber trees along vulnerable coastal belts to prevent erosion and fight poverty.
+                  Planting thousands of native fruit and timber trees along
+                  vulnerable coastal belts to prevent erosion and fight poverty.
                 </p>
                 <div class="program-grid-footer">
                   <a href="project_details.html" class="btn-prog-details">
                     View Details <i class="bi bi-arrow-right"></i>
                   </a>
-                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="general">
+                  <button
+                    type="button"
+                    class="btn-prog-donate-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                    data-cause="general"
+                  >
                     <i class="bi bi-heart-fill"></i> Donate
                   </button>
                 </div>
@@ -527,14 +676,21 @@
               <i class="bi bi-briefcase-fill"></i>
             </div>
             <div>
-              <h3 class="banner-title">Want to Partner with Aloy Foundation on a Project?</h3>
+              <h3 class="banner-title">
+                Want to Partner with Aloy Foundation on a Project?
+              </h3>
               <p class="banner-subtitle">
-                Corporate CSR initiatives, institutional grants, or community co-sponsorships—connect with our Project Management Desk.
+                Corporate CSR initiatives, institutional grants, or community
+                co-sponsorships—connect with our Project Management Desk.
               </p>
             </div>
           </div>
           <div>
-            <a href="contact.html" class="btn btn-aloy-primary" style="padding: 10px 24px; font-size: 0.95rem;">
+            <a
+              href="contact.html"
+              class="btn btn-aloy-primary"
+              style="padding: 10px 24px; font-size: 0.95rem"
+            >
               <i class="bi bi-send-fill me-2"></i> Contact Projects Desk
             </a>
           </div>
@@ -558,11 +714,46 @@
             <div class="footer-social-wrap mt-3">
               <span class="footer-social-title">Connect With Us</span>
               <div class="social-links mt-2">
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-fb" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" class="social-yt" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-ig" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-li" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" class="social-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-fb"
+                  title="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-yt"
+                  title="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-ig"
+                  title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-li"
+                  title="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://wa.me/8801XXXXXXXXX"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-wa"
+                  title="WhatsApp"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -583,7 +774,11 @@
           <div class="col-6 col-lg-3 col-md-3">
             <h5 class="footer-heading">Programs</h5>
             <ul class="footer-links">
-              <li><a href="all_porgrams.html" class="fw-bold text-white">🌟 All Programs</a></li>
+              <li>
+                <a href="all_porgrams.html" class="fw-bold text-white"
+                  >🌟 All Programs</a
+                >
+              </li>
               <li><a href="education.html">📚 Education &amp; Dropout</a></li>
               <li><a href="healthcare.html">🩺 Free Medical Camps</a></li>
               <li><a href="poverty.html">🌾 Sewing &amp; Rickshaws</a></li>
@@ -604,10 +799,13 @@
               </p>
               <p class="small text-white-50 mb-2">
                 <i class="bi bi-envelope-fill text-warning me-2"></i>
-                <a href="mailto:info@aloyfoundation.org">info@aloyfoundation.org</a>
+                <a href="mailto:info@aloyfoundation.org"
+                  >info@aloyfoundation.org</a
+                >
               </p>
               <p class="small text-white-50 mb-0">
-                <i class="bi bi-clock-fill text-warning me-2"></i> Sat - Thu: 9:00 AM - 6:00 PM
+                <i class="bi bi-clock-fill text-warning me-2"></i> Sat - Thu:
+                9:00 AM - 6:00 PM
               </p>
             </div>
           </div>
@@ -626,7 +824,6 @@
       </div>
     </footer>
 
-    
     <!-- ===== DONOR LOGIN & REGISTER MODAL ===== -->
     <div
       class="modal fade"
@@ -636,16 +833,26 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+        <div
+          class="modal-content border-0 shadow-lg"
+          style="border-radius: 20px; overflow: hidden"
+        >
           <div class="modal-header border-0 bg-light p-4 pb-0">
             <div class="w-100">
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div class="d-flex align-items-center gap-2">
-                  <span class="badge bg-success-subtle text-success p-2 rounded-circle">
+                  <span
+                    class="badge bg-success-subtle text-success p-2 rounded-circle"
+                  >
                     <i class="bi bi-person-badge-fill fs-5"></i>
                   </span>
                   <div>
-                    <h5 class="modal-title fw-bold text-dark mb-0" id="donorAuthModalLabel">
+                    <h5
+                      class="modal-title fw-bold text-dark mb-0"
+                      id="donorAuthModalLabel"
+                    >
                       Donor Portal
                     </h5>
                     <p class="text-muted small mb-0">
@@ -662,7 +869,11 @@
               </div>
 
               <!-- Nav Tabs -->
-              <ul class="nav nav-pills nav-fill bg-white p-1 rounded-pill border" id="donorAuthTabs" role="tablist">
+              <ul
+                class="nav nav-pills nav-fill bg-white p-1 rounded-pill border"
+                id="donorAuthTabs"
+                role="tablist"
+              >
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active rounded-pill fw-bold"
@@ -694,64 +905,151 @@
           <div class="modal-body p-4">
             <div class="tab-content" id="donorAuthTabContent">
               <!-- LOGIN PANE -->
-              <div class="tab-pane fade show active" id="donorLoginPane" role="tabpanel">
-                <form id="donorLoginForm" onsubmit="handleDonorAuth(event, 'login')">
+              <div
+                class="tab-pane fade show active"
+                id="donorLoginPane"
+                role="tabpanel"
+              >
+                <form
+                  id="donorLoginForm"
+                  onsubmit="handleDonorAuth(event, 'login')"
+                >
                   <div class="mb-3">
-                    <label class="form-label fw-semibold small text-muted">Email or Mobile Number</label>
+                    <label class="form-label fw-semibold small text-muted"
+                      >Email or Mobile Number</label
+                    >
                     <div class="input-group">
-                      <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-success"></i></span>
-                      <input type="text" class="form-control border-start-0" placeholder="e.g. donor@example.com / 017XXXXXXXX" required />
+                      <span class="input-group-text bg-light border-end-0"
+                        ><i class="bi bi-envelope text-success"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control border-start-0"
+                        placeholder="e.g. donor@example.com / 017XXXXXXXX"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                      <label class="form-label fw-semibold small text-muted mb-0">Password</label>
-                      <a href="#" class="small text-success text-decoration-none fw-semibold" onclick="alert('Password reset link has been sent to your phone/email.')">Forgot Password?</a>
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <label
+                        class="form-label fw-semibold small text-muted mb-0"
+                        >Password</label
+                      >
+                      <a
+                        href="#"
+                        class="small text-success text-decoration-none fw-semibold"
+                        onclick="
+                          alert(
+                            'Password reset link has been sent to your phone/email.',
+                          )
+                        "
+                        >Forgot Password?</a
+                      >
                     </div>
                     <div class="input-group">
-                      <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock text-success"></i></span>
-                      <input type="password" class="form-control border-start-0" placeholder="••••••••" required />
+                      <span class="input-group-text bg-light border-end-0"
+                        ><i class="bi bi-lock text-success"></i
+                      ></span>
+                      <input
+                        type="password"
+                        class="form-control border-start-0"
+                        placeholder="••••••••"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="rememberDonor" checked />
-                    <label class="form-check-label small text-muted" for="rememberDonor">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="rememberDonor"
+                      checked
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="rememberDonor"
+                    >
                       Keep me logged in on this device
                     </label>
                   </div>
-                  <button type="submit" class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-3">
-                    <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to Donor Dashboard
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-3"
+                  >
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to
+                    Donor Dashboard
                   </button>
                 </form>
 
-                <div class="p-3 bg-light rounded-3 text-center small text-muted">
+                <div
+                  class="p-3 bg-light rounded-3 text-center small text-muted"
+                >
                   <i class="bi bi-shield-check text-success me-1"></i>
-                  <strong>Donor Benefits:</strong> Download instant 80G tax receipts, track sponsored students &amp; view complete giving history.
+                  <strong>Donor Benefits:</strong> Download instant 80G tax
+                  receipts, track sponsored students &amp; view complete giving
+                  history.
                 </div>
               </div>
 
               <!-- REGISTER PANE -->
               <div class="tab-pane fade" id="donorRegisterPane" role="tabpanel">
-                <form id="donorRegisterForm" onsubmit="handleDonorAuth(event, 'register')">
+                <form
+                  id="donorRegisterForm"
+                  onsubmit="handleDonorAuth(event, 'register')"
+                >
                   <div class="row g-2 mb-3">
                     <div class="col-12">
-                      <label class="form-label fw-semibold small text-muted">Full Name</label>
-                      <input type="text" class="form-control" placeholder="e.g. Dr. Rafiqul Islam" required />
+                      <label class="form-label fw-semibold small text-muted"
+                        >Full Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="e.g. Dr. Rafiqul Islam"
+                        required
+                      />
                     </div>
                     <div class="col-12 col-sm-6">
-                      <label class="form-label fw-semibold small text-muted">Email Address</label>
-                      <input type="email" class="form-control" placeholder="name@domain.com" required />
+                      <label class="form-label fw-semibold small text-muted"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="name@domain.com"
+                        required
+                      />
                     </div>
                     <div class="col-12 col-sm-6">
-                      <label class="form-label fw-semibold small text-muted">Mobile Number</label>
-                      <input type="tel" class="form-control" placeholder="+880 1XXXXXXXXX" required />
+                      <label class="form-label fw-semibold small text-muted"
+                        >Mobile Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        placeholder="+880 1XXXXXXXXX"
+                        required
+                      />
                     </div>
                     <div class="col-12 col-sm-6">
-                      <label class="form-label fw-semibold small text-muted">Create Password</label>
-                      <input type="password" class="form-control" placeholder="At least 6 characters" minlength="6" required />
+                      <label class="form-label fw-semibold small text-muted"
+                        >Create Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="At least 6 characters"
+                        minlength="6"
+                        required
+                      />
                     </div>
                     <div class="col-12 col-sm-6">
-                      <label class="form-label fw-semibold small text-muted">Donor Category</label>
+                      <label class="form-label fw-semibold small text-muted"
+                        >Donor Category</label
+                      >
                       <select class="form-select">
                         <option value="individual">General Donor</option>
                         <option value="zakat">Zakat Contributor</option>
@@ -762,14 +1060,30 @@
                   </div>
 
                   <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="termsDonor" required checked />
-                    <label class="form-check-label small text-muted" for="termsDonor">
-                      I agree to the <a href="transparency.html" class="text-success">Donation Policy &amp; Terms</a>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="termsDonor"
+                      required
+                      checked
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="termsDonor"
+                    >
+                      I agree to the
+                      <a href="transparency.html" class="text-success"
+                        >Donation Policy &amp; Terms</a
+                      >
                     </label>
                   </div>
 
-                  <button type="submit" class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-2">
-                    <i class="bi bi-person-check-fill me-1"></i> Register as Donor
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-2"
+                  >
+                    <i class="bi bi-person-check-fill me-1"></i> Register as
+                    Donor
                   </button>
                 </form>
               </div>
@@ -791,7 +1105,8 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title fw-bold" id="donationModalLabel">
-              <i class="bi bi-heart-fill text-danger me-2"></i>Make a Secure Donation
+              <i class="bi bi-heart-fill text-danger me-2"></i>Make a Secure
+              Donation
             </h5>
             <button
               type="button"
@@ -803,7 +1118,10 @@
           <div class="modal-body p-4">
             <div id="donationFormStep">
               <div class="mb-3">
-                <label class="form-label fw-bold small text-muted text-uppercase">Choose Program</label>
+                <label
+                  class="form-label fw-bold small text-muted text-uppercase"
+                  >Choose Program</label
+                >
                 <div class="row g-2">
                   <div class="col-4">
                     <button
@@ -836,7 +1154,10 @@
               </div>
 
               <div class="mb-3">
-                <label class="form-label fw-bold small text-muted text-uppercase">Select Amount (BDT)</label>
+                <label
+                  class="form-label fw-bold small text-muted text-uppercase"
+                  >Select Amount (BDT)</label
+                >
                 <div class="row g-2 mb-2">
                   <div class="col-3">
                     <button
@@ -884,7 +1205,10 @@
               </div>
 
               <div class="mb-3">
-                <label class="form-label fw-bold small text-muted text-uppercase">Your Information</label>
+                <label
+                  class="form-label fw-bold small text-muted text-uppercase"
+                  >Your Information</label
+                >
                 <div class="row g-2">
                   <div class="col-md-6">
                     <input
@@ -916,7 +1240,10 @@
               </div>
 
               <div class="mb-3">
-                <label class="form-label fw-bold small text-muted text-uppercase">Payment Method</label>
+                <label
+                  class="form-label fw-bold small text-muted text-uppercase"
+                  >Payment Method</label
+                >
                 <div class="d-flex gap-3">
                   <div class="form-check">
                     <input
@@ -927,7 +1254,9 @@
                       value="bKash"
                       checked
                     />
-                    <label class="form-check-label fw-semibold" for="payBkash">bKash</label>
+                    <label class="form-check-label fw-semibold" for="payBkash"
+                      >bKash</label
+                    >
                   </div>
                   <div class="form-check">
                     <input
@@ -937,7 +1266,9 @@
                       id="payNagad"
                       value="Nagad"
                     />
-                    <label class="form-check-label fw-semibold" for="payNagad">Nagad</label>
+                    <label class="form-check-label fw-semibold" for="payNagad"
+                      >Nagad</label
+                    >
                   </div>
                   <div class="form-check">
                     <input
@@ -947,7 +1278,9 @@
                       id="payCard"
                       value="Card/Bank"
                     />
-                    <label class="form-check-label fw-semibold" for="payCard">Bank Transfer / Card</label>
+                    <label class="form-check-label fw-semibold" for="payCard"
+                      >Bank Transfer / Card</label
+                    >
                   </div>
                 </div>
               </div>
@@ -971,19 +1304,24 @@
                 style="max-width: 450px"
               >
                 <div class="d-flex justify-content-between mb-2">
-                  <span class="text-muted small">Receipt No</span><strong id="receiptTxnId"></strong>
+                  <span class="text-muted small">Receipt No</span
+                  ><strong id="receiptTxnId"></strong>
                 </div>
                 <div class="d-flex justify-content-between mb-2">
-                  <span class="text-muted small">Donor</span><strong id="receiptDonorName"></strong>
+                  <span class="text-muted small">Donor</span
+                  ><strong id="receiptDonorName"></strong>
                 </div>
                 <div class="d-flex justify-content-between mb-2">
-                  <span class="text-muted small">Cause</span><strong id="receiptCause"></strong>
+                  <span class="text-muted small">Cause</span
+                  ><strong id="receiptCause"></strong>
                 </div>
                 <div class="d-flex justify-content-between mb-2">
-                  <span class="text-muted small">Amount</span><strong id="receiptAmount"></strong>
+                  <span class="text-muted small">Amount</span
+                  ><strong id="receiptAmount"></strong>
                 </div>
                 <div class="d-flex justify-content-between">
-                  <span class="text-muted small">Date</span><span id="receiptDate"></span>
+                  <span class="text-muted small">Date</span
+                  ><span id="receiptDate"></span>
                 </div>
               </div>
               <button

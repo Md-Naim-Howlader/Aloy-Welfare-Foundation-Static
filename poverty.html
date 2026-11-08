@@ -16,7 +16,7 @@
 <body class="lang-en">
 
  <!-- ===== TOP BAR  ===== -->
-  <!-- ===== TOP BAR ===== -->
+ <!-- ===== TOP BAR ===== -->
     <div class="top-bar">
       <div
         class="container d-flex flex-wrap justify-content-between align-items-center"
@@ -33,23 +33,33 @@
             >
           </span>
         </div>
-        <div class="language-switcher-container">
-          <div class="language-select-wrapper">
-            <span class="language-icon">
-              <i class="bi bi-globe"></i>
-            </span>
-            <select
-              id="languageSwitcher"
-              class="language-select"
-              aria-label="Select Language"
-            >
-              <option value="en" selected>English</option>
-              <option value="bn">বাংলা</option>
-              <option value="ar">العربية</option>
-              <option value="hi">हिन्दी</option>
-            </select>
+        <div class="d-flex align-items-center gap-2">
+          <a
+            href="#donorAuthModal"
+            data-bs-toggle="modal"
+            class="topbar-donor-link"
+          >
+            <i class="bi bi-person-fill text-warning"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="language-switcher-container">
+            <div class="language-select-wrapper">
+              <span class="language-icon">
+                <i class="bi bi-globe"></i>
+              </span>
+              <select
+                id="languageSwitcher"
+                class="language-select"
+                aria-label="Select Language"
+              >
+                <option value="en" selected>English</option>
+                <option value="bn">বাংলা</option>
+                <option value="ar">العربية</option>
+                <option value="hi">हिन्दी</option>
+              </select>
+            </div>
+            <div id="google_translate_element"></div>
           </div>
-          <div id="google_translate_element"></div>
         </div>
       </div>
     </div>
@@ -84,32 +94,42 @@
         <div class="collapse navbar-collapse" id="navMain">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 href="#"
                 data-bs-toggle="dropdown"
-                >Our Programs</a
+                >Programs</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="education.html"
-                    >📚 Education Program</a
+                  <a class="dropdown-item fw-bold" href="all_porgrams.html"
+                    ><i class="bi bi-grid-fill text-success me-2"></i>All
+                    Programs &amp; Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="project_details.html"
+                    ><i class="bi bi-book-half text-success me-2"></i>Education
+                    Program</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="healthcare.html"
-                    >🩺 Healthcare Services</a
+                    ><i class="bi bi-heart-pulse-fill text-danger me-2"></i
+                    >Healthcare Services</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="poverty.html"
-                    >🌾 Poverty Alleviation</a
+                    ><i class="bi bi-briefcase-fill text-primary me-2"></i
+                    >Poverty Alleviation</a
                   >
                 </li>
               </ul>
@@ -118,28 +138,38 @@
               <a class="nav-link" href="transparency.html">Transparency</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="documents.html"
-                >Licenses &amp; Documents</a
-              >
+              <a class="nav-link" href="documents.html">Cetifications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="stories.html">Impact Stories</a>
+              <a class="nav-link" href="stories.html">News & Stories</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <button
-            type="button"
-            class="btn-aloy-donate"
-            data-bs-toggle="modal"
-            data-bs-target="#donationModal"
-          >
-            <span>Donate</span>
-          </button>
+          <div class="d-flex align-items-center gap-2">
+            <button
+              type="button"
+              class="btn-donor-auth"
+              data-bs-toggle="modal"
+              data-bs-target="#donorAuthModal"
+            >
+              <i class="bi bi-person-circle"></i>
+              <span>Login</span>
+            </button>
+            <button
+              type="button"
+              class="btn-aloy-donate"
+              data-bs-toggle="modal"
+              data-bs-target="#donationModal"
+            >
+              <span>Donate</span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
+
 
   <!-- ===== PAGE HERO ===== -->
   <section class="page-hero">
