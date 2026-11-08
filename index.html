@@ -54,23 +54,33 @@
             >
           </span>
         </div>
-        <div class="language-switcher-container">
-          <div class="language-select-wrapper">
-            <span class="language-icon">
-              <i class="bi bi-globe"></i>
-            </span>
-            <select
-              id="languageSwitcher"
-              class="language-select"
-              aria-label="Select Language"
-            >
-              <option value="en" selected>English</option>
-              <option value="bn">বাংলা</option>
-              <option value="ar">العربية</option>
-              <option value="hi">हिन्दी</option>
-            </select>
+        <div class="d-flex align-items-center gap-2">
+          <a
+            href="#donorAuthModal"
+            data-bs-toggle="modal"
+            class="topbar-donor-link"
+          >
+            <i class="bi bi-person-fill text-warning"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="language-switcher-container">
+            <div class="language-select-wrapper">
+              <span class="language-icon">
+                <i class="bi bi-globe"></i>
+              </span>
+              <select
+                id="languageSwitcher"
+                class="language-select"
+                aria-label="Select Language"
+              >
+                <option value="en" selected>English</option>
+                <option value="bn">বাংলা</option>
+                <option value="ar">العربية</option>
+                <option value="hi">हिन्दी</option>
+              </select>
+            </div>
+            <div id="google_translate_element"></div>
           </div>
-          <div id="google_translate_element"></div>
         </div>
       </div>
     </div>
@@ -115,22 +125,32 @@
                 class="nav-link dropdown-toggle"
                 href="#"
                 data-bs-toggle="dropdown"
-                >Our Programs</a
+                >Programs</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="education.html"
-                    >📚 Education Program</a
+                  <a class="dropdown-item fw-bold" href="all_porgrams.html"
+                    ><i class="bi bi-grid-fill text-success me-2"></i>All
+                    Programs &amp; Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="project_details.html"
+                    ><i class="bi bi-book-half text-success me-2"></i>Education
+                    Program</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="healthcare.html"
-                    >🩺 Healthcare Services</a
+                    ><i class="bi bi-heart-pulse-fill text-danger me-2"></i
+                    >Healthcare Services</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="poverty.html"
-                    >🌾 Poverty Alleviation</a
+                    ><i class="bi bi-briefcase-fill text-primary me-2"></i
+                    >Poverty Alleviation</a
                   >
                 </li>
               </ul>
@@ -139,25 +159,34 @@
               <a class="nav-link" href="transparency.html">Transparency</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="documents.html"
-                >Licenses &amp; Documents</a
-              >
+              <a class="nav-link" href="documents.html">Cetifications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="stories.html">Impact Stories</a>
+              <a class="nav-link" href="stories.html">News & Stories</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <button
-            type="button"
-            class="btn-aloy-donate"
-            data-bs-toggle="modal"
-            data-bs-target="#donationModal"
-          >
-            <span>Donate</span>
-          </button>
+          <div class="d-flex align-items-center gap-2">
+            <button
+              type="button"
+              class="btn-donor-auth"
+              data-bs-toggle="modal"
+              data-bs-target="#donorAuthModal"
+            >
+              <i class="bi bi-person-circle"></i>
+              <span>Login</span>
+            </button>
+            <button
+              type="button"
+              class="btn-aloy-donate"
+              data-bs-toggle="modal"
+              data-bs-target="#donationModal"
+            >
+              <span>Donate</span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -302,17 +331,17 @@
               Sustainable relief and transformation on the ground
             </p>
           </div>
-          <a href="education.html" class="sec-link"
+          <a href="all_porgrams.html" class="sec-link"
             >View All Programs <i class="bi bi-arrow-right"></i
           ></a>
         </div>
         <div class="prog-box">
           <div id="programOwl" class="owl-carousel owl-theme">
-            <article class="prog-card">
+            <article class="prog-card" data-url="project_details.html">
               <div class="prog-img-wrap">
                 <img
                   src="assets/images/programs/1.jpg"
-                  alt="Education & School Feeding"
+                  alt="Education &amp; School Feeding"
                 />
                 <span class="prog-tag">Education</span>
               </div>
@@ -322,16 +351,12 @@
                   Nutritious meals and comprehensive learning support to bring
                   dropouts back to school and secure their future.
                 </p>
-                <button
-                  type="button"
-                  class="prog-donate"
-                  data-cause="education"
-                >
-                  <i class="bi bi-heart-fill"></i> Support Education
-                </button>
+                <a href="project_details.html" class="btn-prog-view">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </article>
-            <article class="prog-card">
+            <article class="prog-card" data-url="project_details.html">
               <div class="prog-img-wrap">
                 <img
                   src="assets/images/programs/2.jpg"
@@ -345,20 +370,16 @@
                   Specialist doctors, diagnostic testing, and free medicines in
                   remote char areas and underserved communities.
                 </p>
-                <button
-                  type="button"
-                  class="prog-donate"
-                  data-cause="healthcare"
-                >
-                  <i class="bi bi-heart-fill"></i> Sponsor Medical Care
-                </button>
+                <a href="project_details.html" class="btn-prog-view">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </article>
-            <article class="prog-card">
+            <article class="prog-card" data-url="project_details.html">
               <div class="prog-img-wrap">
                 <img
                   src="assets/images/programs/3.jpg"
-                  alt="Sewing Machines & Rickshaws"
+                  alt="Sewing Machines &amp; Rickshaws"
                 />
                 <span class="prog-tag">Livelihood</span>
               </div>
@@ -368,12 +389,12 @@
                   Livelihood assets and tools to provide lasting, dignified
                   income for struggling and vulnerable families.
                 </p>
-                <button type="button" class="prog-donate" data-cause="poverty">
-                  <i class="bi bi-heart-fill"></i> Gift Livelihood
-                </button>
+                <a href="project_details.html" class="btn-prog-view">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </article>
-            <article class="prog-card">
+            <article class="prog-card" data-url="project_details.html">
               <div class="prog-img-wrap">
                 <img
                   src="assets/images/programs/4.jpg"
@@ -387,33 +408,29 @@
                   Rapid humanitarian response and rehabilitation kits during
                   natural disasters, floods, and winter cold waves.
                 </p>
-                <button type="button" class="prog-donate" data-cause="general">
-                  <i class="bi bi-heart-fill"></i> Emergency Relief
-                </button>
+                <a href="project_details.html" class="btn-prog-view">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </article>
-            <article class="prog-card">
+            <article class="prog-card" data-url="project_details.html">
               <div class="prog-img-wrap">
                 <img
                   src="assets/images/programs/6.jpg"
-                  alt="Emergency Relief Fund"
+                  alt="Free Healthcare &amp; Vision Care"
                 />
                 <span class="prog-tag">Healthcare</span>
               </div>
               <div class="prog-body">
-                <h3 class="prog-title">Health Support</h3>
+                <h3 class="prog-title">Health Support &amp; Vision Care</h3>
                 <p class="prog-text">
-                  Bringing Compassionate Healthcare to the Underserved A large
-                  segment of Bangladesh’s population still lacks access to basic
-                  healthcare due to poverty, remote living conditions, high
-                  treatment costs, and low awareness. To change this reality,
-                  MASTUL Foundation operates its comprehensive Health Support
-                  Program, ensuring accessible and affordable medical services
-                  for marginalized communities.
+                  Aloy Welfare Foundation operates comprehensive healthcare
+                  initiatives, cataract eye surgeries, and mobile clinics for
+                  marginalized communities across Bangladesh.
                 </p>
-                <button type="button" class="prog-donate" data-cause="general">
-                  <i class="bi bi-heart-fill"></i> Healthcare
-                </button>
+                <a href="project_details.html" class="btn-prog-view">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </article>
           </div>
@@ -438,7 +455,7 @@
         </div>
         <div class="prog-box home-owl-wrap">
           <div id="storiesOwl" class="owl-carousel owl-theme">
-            <article class="m-card">
+            <a href="story-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/stories/1.jpg"
@@ -456,13 +473,13 @@
                   How regular giving improves the lives of helpless people and
                   children.
                 </p>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="story-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/stories/2.jpg"
@@ -480,13 +497,13 @@
                   The story of street children finding the light of education,
                   and how Aloy began.
                 </p>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="story-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/stories/3.jpg"
@@ -503,13 +520,13 @@
                 <p class="m-text clamp-3">
                   How a single sewing machine changed a family’s life.
                 </p>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="story-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/programs/1.jpg"
@@ -527,13 +544,13 @@
                   Providing complete primary education, nutritious tiffin, and
                   books to street kids in Dhaka.
                 </p>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="story-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/programs/2.jpg"
@@ -551,13 +568,13 @@
                   Specialist ophthalmology camp offering free cataract phaco
                   surgeries and post-op care.
                 </p>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="story-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/programs/3.jpg"
@@ -575,11 +592,11 @@
                   With an interest-free battery rickshaw grant, Rahim now earns
                   daily income for his family.
                 </p>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
           </div>
         </div>
       </div>
@@ -750,7 +767,7 @@
         </div>
         <div class="prog-box home-owl-wrap">
           <div id="newsOwl" class="owl-carousel owl-theme">
-            <article class="m-card">
+            <a href="news-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/news/1.jpg"
@@ -761,13 +778,13 @@
                 <h3 class="m-title clamp-2">
                   Aloy Foundation changes the lives of the underprivileged
                 </h3>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="news-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img src="assets/images/news/1.jpg" alt="Kaler Kantho" /><span
                   class="m-tag dark"
@@ -778,13 +795,13 @@
                 <h3 class="m-title clamp-2">
                   Aloy Foundation’s journey in humanitarian service
                 </h3>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="news-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img src="assets/images/news/1.jpg" alt="Naya Diganta" /><span
                   class="m-tag dark"
@@ -795,13 +812,13 @@
                 <h3 class="m-title clamp-2">
                   New horizons for Aloy Foundation
                 </h3>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="news-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/programs/1.jpg"
@@ -812,13 +829,13 @@
                 <h3 class="m-title clamp-2">
                   Spreading hope: Aloy Foundation's nationwide welfare reach
                 </h3>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="news-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/programs/3.jpg"
@@ -829,13 +846,13 @@
                 <h3 class="m-title clamp-2">
                   Empowering rural women through self-reliance initiatives
                 </h3>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
 
-            <article class="m-card">
+            <a href="news-details.html" class="m-card">
               <div class="m-media ratio-wide">
                 <img
                   src="assets/images/programs/2.jpg"
@@ -846,11 +863,11 @@
                 <h3 class="m-title clamp-2">
                   Frontline medical assistance reaching coastal communities
                 </h3>
-                <a href="stories.html" class="m-link"
+                <span class="m-link"
                   >View Details <i class="bi bi-arrow-right"></i
-                ></a>
+                ></span>
               </div>
-            </article>
+            </a>
           </div>
         </div>
       </div>
@@ -890,7 +907,7 @@
             <div class="donate-card-body">
               <div class="meta-row">
                 <span class="meta-label">Bank Name</span>
-                <span class="meta-val">Standar Islami Bank PLC</span>
+                <span class="meta-val">Standard Islami Bank PLC</span>
               </div>
               <div class="meta-row">
                 <span class="meta-label">Account Name</span>
@@ -1181,15 +1198,17 @@
             <h5 class="footer-heading">Programs</h5>
             <ul class="footer-links">
               <li>
-                <a href="education.html">Education &amp; Dropout Prevention</a>
+                <a href="all_porgrams.html" class="fw-bold text-white"
+                  >All Programs</a
+                >
+              </li>
+              <li>
+                <a href="project_details.html"
+                  >Education &amp; Dropout Prevention</a
+                >
               </li>
               <li><a href="healthcare.html">Free Medical Camps</a></li>
-              <li>
-                <a href="poverty.html">Sewing &amp; Rickshaws</a>
-              </li>
-              <li>
-                <a href="#other-ways-to-donate">Sadaqah &amp; Zakat Fund</a>
-              </li>
+              <li><a href="poverty.html">Livelihood &amp; Sewing</a></li>
             </ul>
           </div>
 
@@ -1206,7 +1225,7 @@
               </li>
               <li>
                 <i class="bi bi-telephone-fill"></i>
-                <a href="tel:+8809612345678">+880 9612-345678</a>
+                <a href="tel:09617-555111">09617-555111</a>
               </li>
               <li>
                 <i class="bi bi-phone-fill"></i>
@@ -1238,6 +1257,275 @@
         </div>
       </div>
     </footer>
+
+    <!-- ===== DONOR LOGIN & REGISTER MODAL ===== -->
+    <div
+      class="modal fade"
+      id="donorAuthModal"
+      tabindex="-1"
+      aria-labelledby="donorAuthModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div
+          class="modal-content border-0 shadow-lg"
+          style="border-radius: 20px; overflow: hidden"
+        >
+          <div class="modal-header border-0 bg-light p-4 pb-0">
+            <div class="w-100">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <span
+                    class="badge bg-success-subtle text-success p-2 rounded-circle"
+                  >
+                    <i class="bi bi-person-badge-fill fs-5"></i>
+                  </span>
+                  <div>
+                    <h5
+                      class="modal-title fw-bold text-dark mb-0"
+                      id="donorAuthModalLabel"
+                    >
+                      Donor Portal
+                    </h5>
+                    <p class="text-muted small mb-0">
+                      ডোনার ড্যাশবোর্ড ও ট্যাক্স সার্টিফিকেট
+                    </p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <!-- Nav Tabs -->
+              <ul
+                class="nav nav-pills nav-fill bg-white p-1 rounded-pill border"
+                id="donorAuthTabs"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active rounded-pill fw-bold"
+                    id="donor-login-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#donorLoginPane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Donor Login
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link rounded-pill fw-bold"
+                    id="donor-register-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#donorRegisterPane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-person-plus-fill me-1"></i> New Register
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="tab-content" id="donorAuthTabContent">
+              <!-- LOGIN PANE -->
+              <div
+                class="tab-pane fade show active"
+                id="donorLoginPane"
+                role="tabpanel"
+              >
+                <form
+                  id="donorLoginForm"
+                  onsubmit="handleDonorAuth(event, 'login')"
+                >
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold small text-muted"
+                      >Email or Mobile Number</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"
+                        ><i class="bi bi-envelope text-success"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control border-start-0"
+                        placeholder="e.g. donor@example.com / 017XXXXXXXX"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <label
+                        class="form-label fw-semibold small text-muted mb-0"
+                        >Password</label
+                      >
+                      <a
+                        href="#"
+                        class="small text-success text-decoration-none fw-semibold"
+                        onclick="
+                          alert(
+                            'Password reset link has been sent to your phone/email.',
+                          )
+                        "
+                        >Forgot Password?</a
+                      >
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"
+                        ><i class="bi bi-lock text-success"></i
+                      ></span>
+                      <input
+                        type="password"
+                        class="form-control border-start-0"
+                        placeholder="••••••••"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="rememberDonor"
+                      checked
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="rememberDonor"
+                    >
+                      Keep me logged in on this device
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-3"
+                  >
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to
+                    Donor Dashboard
+                  </button>
+                </form>
+
+                <div
+                  class="p-3 bg-light rounded-3 text-center small text-muted"
+                >
+                  <i class="bi bi-shield-check text-success me-1"></i>
+                  <strong>Donor Benefits:</strong> Download instant 80G tax
+                  receipts, track sponsored students &amp; view complete giving
+                  history.
+                </div>
+              </div>
+
+              <!-- REGISTER PANE -->
+              <div class="tab-pane fade" id="donorRegisterPane" role="tabpanel">
+                <form
+                  id="donorRegisterForm"
+                  onsubmit="handleDonorAuth(event, 'register')"
+                >
+                  <div class="row g-2 mb-3">
+                    <div class="col-12">
+                      <label class="form-label fw-semibold small text-muted"
+                        >Full Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="e.g. Dr. Rafiqul Islam"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="name@domain.com"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted"
+                        >Mobile Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        placeholder="+880 1XXXXXXXXX"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted"
+                        >Create Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="At least 6 characters"
+                        minlength="6"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted"
+                        >Donor Category</label
+                      >
+                      <select class="form-select">
+                        <option value="individual">General Donor</option>
+                        <option value="zakat">Zakat Contributor</option>
+                        <option value="sponsor">Child Education Sponsor</option>
+                        <option value="corporate">Corporate CSR</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="termsDonor"
+                      required
+                      checked
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="termsDonor"
+                    >
+                      I agree to the
+                      <a href="transparency.html" class="text-success"
+                        >Donation Policy &amp; Terms</a
+                      >
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-2"
+                  >
+                    <i class="bi bi-person-check-fill me-1"></i> Register as
+                    Donor
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ===== DONATION MODAL ===== -->
     <div class="modal fade" id="donationModal" tabindex="-1" aria-hidden="true">
@@ -1504,9 +1792,8 @@
       });
 
       // Owl clones lose event listeners, so delegate the click
-      $(document).on("click", ".prog-donate", function () {
-        appState.selectedCause = this.dataset.cause;
-        openDonationModal();
+      $(document).on("click", ".prog-card", function () {
+        window.location.href = $(this).data("url") || "project_details.html";
       });
     </script>
     <script>

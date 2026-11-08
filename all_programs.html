@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects &amp; Programs | Aloy Welfare Foundation</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/pages/programs.css" />
+  </head>
+  <body class="lang-en page-all-programs">
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="d-flex align-items-center gap-3">
+          <span class="d-none d-md-inline text-white-50">
+            <i class="bi bi-shield-check text-warning me-1"></i>Govt NGO Affairs
+            Reg: AF-8912 | 100% Tax-Exempt
+          </span>
+          <span class="d-flex align-items-center gap-1">
+            <i class="bi bi-telephone-fill text-warning"></i>
+            <a href="tel:+8809612345678" class="fw-semibold"
+              >+880 9612-345678</a
+            >
+          </span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <a
+            href="#donorAuthModal"
+            data-bs-toggle="modal"
+            class="topbar-donor-link"
+          >
+            <i class="bi bi-person-fill text-warning"></i>
+            <span>Donor Login / Register</span>
+          </a>
+          <div class="language-switcher-container">
+          <div class="language-select-wrapper">
+            <span class="language-icon">
+              <i class="bi bi-globe"></i>
+            </span>
+            <select
+              id="languageSwitcher"
+              class="language-select"
+              aria-label="Select Language"
+            >
+              <option value="en" selected>English</option>
+              <option value="bn">বাংলা</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+            </select>
+          </div>
+          <div id="google_translate_element"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar navbar-expand-lg navbar-main sticky-top">
+      <nav class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="assets/images/logo.jpg"
+            alt="Aloy Foundation Logo"
+            class="rounded"
+          />
+          <div class="d-flex flex-column">
+            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)">
+              Aloy
+              <span style="color: var(--aloy-green-dark)">Foundation</span>
+            </span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Our Programs</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fw-bold" href="all_porgrams.html"
+                    >🌟 All Programs &amp; Projects</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="education.html"
+                    >📚 Education Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="healthcare.html"
+                    >🩺 Healthcare Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="poverty.html"
+                    >🌾 Poverty Alleviation</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transparency.html">Transparency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html"
+                >Licenses &amp; Documents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stories.html">Impact Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button
+              type="button"
+              class="btn-donor-auth"
+              data-bs-toggle="modal"
+              data-bs-target="#donorAuthModal"
+            >
+              <i class="bi bi-person-circle"></i>
+              <span>Donor Login</span>
+            </button>
+            <button
+              type="button"
+              class="btn-aloy-donate"
+              data-bs-toggle="modal"
+              data-bs-target="#donationModal"
+            >
+            <span>Donate</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-breadcrumb">
+          <a href="index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a> <span>/</span>
+          <span>Our Programs</span> <span>/</span>
+          <span>All Programs &amp; Projects</span>
+        </div>
+        <h1 class="page-hero-title">Our Projects &amp; Humanitarian Programs</h1>
+        <p class="page-hero-lead">
+          Transparent, sustainable, and impact-driven interventions providing quality education, healthcare, and economic self-reliance across Bangladesh.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="py-5">
+      <div class="container py-2">
+        <!-- Trust Ribbon -->
+        <div class="row g-4 mb-5">
+          <div class="col-lg-3 col-sm-6">
+            <div class="theme-card text-center p-4">
+              <div class="theme-icon-wrap mx-auto">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h4 class="fw-bold mb-1">15,000+</h4>
+              <p class="text-muted small mb-0">Students Educated</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="theme-card text-center p-4">
+              <div class="theme-icon-wrap mx-auto" style="background: #fef3c7; color: #d97706;">
+                <i class="bi bi-heart-pulse-fill"></i>
+              </div>
+              <h4 class="fw-bold mb-1">120,000+</h4>
+              <p class="text-muted small mb-0">Patients Treated Free</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="theme-card text-center p-4">
+              <div class="theme-icon-wrap mx-auto" style="background: #f3e8ff; color: #9333ea;">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h4 class="fw-bold mb-1">8,200+</h4>
+              <p class="text-muted small mb-0">Self-Reliant Families</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="theme-card text-center p-4">
+              <div class="theme-icon-wrap mx-auto" style="background: #e0f2fe; color: #0284c7;">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4 class="fw-bold mb-1">100% Free</h4>
+              <p class="text-muted small mb-0">Tax-Exempt &amp; Audited</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Title & Filter Tabs -->
+        <div class="text-center max-w-700 mx-auto mb-4">
+          <span class="theme-badge">
+            <i class="bi bi-stars"></i> EXPLORE ALL INITIATIVES
+          </span>
+          <h2 class="fw-bold text-dark fs-2">Active Field Programs Across Bangladesh</h2>
+          <p class="text-muted">
+            মানুষের মৌলিক অধিকার রক্ষা ও স্থায়ী আত্মনির্ভরশীলতা অর্জনে আমাদের নিয়মিত কার্যক্রমসমূহ নিচে তুলে ধরা হলো:
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="program-filter-wrapper mb-5">
+          <button class="program-filter-btn active" data-filter="all">
+            <i class="bi bi-grid-fill"></i> All Programs
+            <span class="badge">8</span>
+          </button>
+          <button class="program-filter-btn" data-filter="education">
+            <i class="bi bi-book-half"></i> Education
+            <span class="badge">2</span>
+          </button>
+          <button class="program-filter-btn" data-filter="healthcare">
+            <i class="bi bi-hospital"></i> Healthcare
+            <span class="badge">2</span>
+          </button>
+          <button class="program-filter-btn" data-filter="livelihood">
+            <i class="bi bi-scissors"></i> Self-Reliance
+            <span class="badge">2</span>
+          </button>
+          <button class="program-filter-btn" data-filter="relief">
+            <i class="bi bi-tree"></i> Relief &amp; Climate
+            <span class="badge">2</span>
+          </button>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="row g-4" id="programsGrid">
+          <!-- Program 1: Education & School Feeding -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="education">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/programs/1.jpg" alt="Education & School Feeding" loading="lazy" />
+                </a>
+                <span class="program-grid-tag blue">Education</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Education &amp; School Feeding Program</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  ঝরে পড়া রোধ ও দৈনিক পুষ্টিকর আহার কর্মসূচি
+                </div>
+                <p class="program-grid-text">
+                  Nutritious hot meals, textbooks, stationery, and comprehensive learning support to keep children in classrooms.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="education">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 2: Higher Education Scholarship -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="education">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/stories/2.jpg" alt="University Scholarships" loading="lazy" />
+                </a>
+                <span class="program-grid-tag blue">Scholarships</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Alor Dishari Higher Education Scholarships</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  মেধাবী সুবিধাবঞ্চিত শিক্ষার্থীদের বিশ্ববিদ্যালয় বৃত্তি
+                </div>
+                <p class="program-grid-text">
+                  Covering semester fees, books, and monthly stipends for underprivileged students pursuing college and university degrees.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="education">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 3: Free Medical Camps -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="healthcare">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/programs/2.jpg" alt="Free Medical Camps" loading="lazy" />
+                </a>
+                <span class="program-grid-tag rose">Healthcare</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Free Medical Camps &amp; Mobile Clinics</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  চরাঞ্চলে বিশেষজ্ঞ চিকিৎসাসেবা ও বিনামূল্যে ওষুধ
+                </div>
+                <p class="program-grid-text">
+                  Specialist MBBS doctors, blood testing, diagnostics, and full courses of medicine for remote char &amp; coastal communities.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="healthcare">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 4: Cataract Eye Surgeries -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="healthcare">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/programs/6.jpg" alt="Cataract Eye Surgery" loading="lazy" />
+                </a>
+                <span class="program-grid-tag rose">Vision Care</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Free Cataract Surgery &amp; Vision Care</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  বিনামূল্যে ছানি অপারেশন ও দৃষ্টিশক্তি পুনর্বাসন
+                </div>
+                <p class="program-grid-text">
+                  Phaco surgeries with intraocular lens implants restoring sight to elderly villagers completely free of charge.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="healthcare">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 5: Sewing Machines & Women Empowerment -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="livelihood">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/programs/3.jpg" alt="Sewing Machines" loading="lazy" />
+                </a>
+                <span class="program-grid-tag amber">Self-Reliance</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Women Empowerment with Sewing Machines</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  সেলাই প্রশিক্ষণ ও নারীদের স্বাবলম্বীকরণ কর্মসূচি
+                </div>
+                <p class="program-grid-text">
+                  Training rural widows and unemployed women in tailoring and gifting brand-new machines for dignified livelihood.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="poverty">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 6: Rickshaw & Utility Van Grants -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="livelihood">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/stories/3.jpg" alt="Rickshaw Distribution" loading="lazy" />
+                </a>
+                <span class="program-grid-tag amber">Livelihood</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Rickshaw &amp; Utility Cargo Van Grants</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  দিনমজুরদের রিকশা ও মালামাল পরিবহন ভ্যান উপহার
+                </div>
+                <p class="program-grid-text">
+                  Handing over free asset ownership of battery-run rickshaws and utility vans, multiplying daily income without debt.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="poverty">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 7: Emergency Flood & Cyclone Relief -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="relief">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/programs/4.jpg" alt="Emergency Relief" loading="lazy" />
+                </a>
+                <span class="program-grid-tag purple">Disaster Relief</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Emergency Flood &amp; Disaster Relief</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  বন্যা ও নদীভাঙনে জরুরি খাদ্য, বস্ত্র ও পুনর্বাসন
+                </div>
+                <p class="program-grid-text">
+                  Rapid humanitarian rescue, cooked food, dry rations, clean drinking water, and permanent raised tin-shed homes.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="general">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 8: Green Roots Tree Plantation -->
+          <div class="col-12 col-md-6 col-lg-4 prog-item" data-category="relief">
+            <div class="program-grid-card">
+              <div class="program-grid-media">
+                <a href="project_details.html">
+                  <img src="assets/images/stories/1.jpg" alt="Tree Plantation" loading="lazy" />
+                </a>
+                <span class="program-grid-tag">Environment</span>
+              </div>
+              <div class="program-grid-body">
+                <h3 class="program-grid-title">
+                  <a href="project_details.html">Green Roots Tree Plantation &amp; Climate Action</a>
+                </h3>
+                <div class="program-grid-subtitle">
+                  উপকূলীয় বাঁধ রক্ষা ও ফলদ-বনজ বৃক্ষরোপণ কর্মসূচি
+                </div>
+                <p class="program-grid-text">
+                  Planting thousands of native fruit and timber trees along vulnerable coastal belts to prevent erosion and fight poverty.
+                </p>
+                <div class="program-grid-footer">
+                  <a href="project_details.html" class="btn-prog-details">
+                    View Details <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <button type="button" class="btn-prog-donate-sm" data-bs-toggle="modal" data-bs-target="#donationModal" data-cause="general">
+                    <i class="bi bi-heart-fill"></i> Donate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom CTA Banner Matching documents.html -->
+        <div class="theme-contact-banner mt-5">
+          <div class="d-flex align-items-center gap-3">
+            <div class="banner-icon-box">
+              <i class="bi bi-briefcase-fill"></i>
+            </div>
+            <div>
+              <h3 class="banner-title">Want to Partner with Aloy Foundation on a Project?</h3>
+              <p class="banner-subtitle">
+                Corporate CSR initiatives, institutional grants, or community co-sponsorships—connect with our Project Management Desk.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="contact.html" class="btn btn-aloy-primary" style="padding: 10px 24px; font-size: 0.95rem;">
+              <i class="bi bi-send-fill me-2"></i> Contact Projects Desk
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-main">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Col 1: Brand & Social -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-logo">
+              <img src="assets/images/logo.jpg" alt="Aloy Foundation" />
+            </div>
+            <p class="small text-white-50 pe-lg-3">
+              Aloy Foundation is a registered non-profit dedicated to education,
+              healthcare and lasting poverty alleviation in Bangladesh.
+            </p>
+            <div class="footer-social-wrap mt-3">
+              <span class="footer-social-title">Connect With Us</span>
+              <div class="social-links mt-2">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-fb" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="social-yt" title="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-ig" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-li" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" class="social-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-6 col-lg-2 col-md-3">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="transparency.html">Transparency</a></li>
+              <li><a href="documents.html">Licenses &amp; Documents</a></li>
+              <li><a href="stories.html">Impact Stories</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Programs -->
+          <div class="col-6 col-lg-3 col-md-3">
+            <h5 class="footer-heading">Programs</h5>
+            <ul class="footer-links">
+              <li><a href="all_porgrams.html" class="fw-bold text-white">🌟 All Programs</a></li>
+              <li><a href="education.html">📚 Education &amp; Dropout</a></li>
+              <li><a href="healthcare.html">🩺 Free Medical Camps</a></li>
+              <li><a href="poverty.html">🌾 Sewing &amp; Rickshaws</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact</h5>
+            <div class="footer-contact-info">
+              <p class="small text-white-50 mb-2">
+                <i class="bi bi-geo-alt-fill text-warning me-2"></i>
+                Plot 62 &amp; 64, Road 3, Block A, Aftabnagar, Dhaka 1212
+              </p>
+              <p class="small text-white-50 mb-2">
+                <i class="bi bi-telephone-fill text-warning me-2"></i>
+                <a href="tel:+8809612345678">+880 9612-345678</a>
+              </p>
+              <p class="small text-white-50 mb-2">
+                <i class="bi bi-envelope-fill text-warning me-2"></i>
+                <a href="mailto:info@aloyfoundation.org">info@aloyfoundation.org</a>
+              </p>
+              <p class="small text-white-50 mb-0">
+                <i class="bi bi-clock-fill text-warning me-2"></i> Sat - Thu: 9:00 AM - 6:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-top border-secondary border-opacity-25 mt-4 pt-3 d-flex flex-wrap justify-content-between align-items-center footer-bottom"
+        >
+          <p class="small text-white-50 mb-0">
+            &copy; 2026 Aloy Welfare Foundation. All Rights Reserved.
+          </p>
+          <p class="small text-white-50 mb-0">
+            Certified 100% Tax-Exempt Non-Profit in Bangladesh
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    
+    <!-- ===== DONOR LOGIN & REGISTER MODAL ===== -->
+    <div
+      class="modal fade"
+      id="donorAuthModal"
+      tabindex="-1"
+      aria-labelledby="donorAuthModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+          <div class="modal-header border-0 bg-light p-4 pb-0">
+            <div class="w-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge bg-success-subtle text-success p-2 rounded-circle">
+                    <i class="bi bi-person-badge-fill fs-5"></i>
+                  </span>
+                  <div>
+                    <h5 class="modal-title fw-bold text-dark mb-0" id="donorAuthModalLabel">
+                      Donor Portal
+                    </h5>
+                    <p class="text-muted small mb-0">
+                      ডোনার ড্যাশবোর্ড ও ট্যাক্স সার্টিফিকেট
+                    </p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <!-- Nav Tabs -->
+              <ul class="nav nav-pills nav-fill bg-white p-1 rounded-pill border" id="donorAuthTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active rounded-pill fw-bold"
+                    id="donor-login-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#donorLoginPane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Donor Login
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link rounded-pill fw-bold"
+                    id="donor-register-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#donorRegisterPane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-person-plus-fill me-1"></i> New Register
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="tab-content" id="donorAuthTabContent">
+              <!-- LOGIN PANE -->
+              <div class="tab-pane fade show active" id="donorLoginPane" role="tabpanel">
+                <form id="donorLoginForm" onsubmit="handleDonorAuth(event, 'login')">
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold small text-muted">Email or Mobile Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-success"></i></span>
+                      <input type="text" class="form-control border-start-0" placeholder="e.g. donor@example.com / 017XXXXXXXX" required />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <label class="form-label fw-semibold small text-muted mb-0">Password</label>
+                      <a href="#" class="small text-success text-decoration-none fw-semibold" onclick="alert('Password reset link has been sent to your phone/email.')">Forgot Password?</a>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock text-success"></i></span>
+                      <input type="password" class="form-control border-start-0" placeholder="••••••••" required />
+                    </div>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="rememberDonor" checked />
+                    <label class="form-check-label small text-muted" for="rememberDonor">
+                      Keep me logged in on this device
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-3">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to Donor Dashboard
+                  </button>
+                </form>
+
+                <div class="p-3 bg-light rounded-3 text-center small text-muted">
+                  <i class="bi bi-shield-check text-success me-1"></i>
+                  <strong>Donor Benefits:</strong> Download instant 80G tax receipts, track sponsored students &amp; view complete giving history.
+                </div>
+              </div>
+
+              <!-- REGISTER PANE -->
+              <div class="tab-pane fade" id="donorRegisterPane" role="tabpanel">
+                <form id="donorRegisterForm" onsubmit="handleDonorAuth(event, 'register')">
+                  <div class="row g-2 mb-3">
+                    <div class="col-12">
+                      <label class="form-label fw-semibold small text-muted">Full Name</label>
+                      <input type="text" class="form-control" placeholder="e.g. Dr. Rafiqul Islam" required />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted">Email Address</label>
+                      <input type="email" class="form-control" placeholder="name@domain.com" required />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted">Mobile Number</label>
+                      <input type="tel" class="form-control" placeholder="+880 1XXXXXXXXX" required />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted">Create Password</label>
+                      <input type="password" class="form-control" placeholder="At least 6 characters" minlength="6" required />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="form-label fw-semibold small text-muted">Donor Category</label>
+                      <select class="form-select">
+                        <option value="individual">General Donor</option>
+                        <option value="zakat">Zakat Contributor</option>
+                        <option value="sponsor">Child Education Sponsor</option>
+                        <option value="corporate">Corporate CSR</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="termsDonor" required checked />
+                    <label class="form-check-label small text-muted" for="termsDonor">
+                      I agree to the <a href="transparency.html" class="text-success">Donation Policy &amp; Terms</a>
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn btn-success w-100 py-2 fw-bold rounded-pill mb-2">
+                    <i class="bi bi-person-check-fill me-1"></i> Register as Donor
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DONATION MODAL ===== -->
+    <div
+      class="modal fade"
+      id="donationModal"
+      tabindex="-1"
+      aria-labelledby="donationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="donationModalLabel">
+              <i class="bi bi-heart-fill text-danger me-2"></i>Make a Secure Donation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div id="donationFormStep">
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase">Choose Program</label>
+                <div class="row g-2">
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success w-100 active btn-sm"
+                      data-modal-cause="education"
+                    >
+                      Education
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success w-100 btn-sm"
+                      data-modal-cause="healthcare"
+                    >
+                      Healthcare
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success w-100 btn-sm"
+                      data-modal-cause="poverty"
+                    >
+                      Self-Reliance
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase">Select Amount (BDT)</label>
+                <div class="row g-2 mb-2">
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 active btn-sm modal-amt-btn"
+                      data-amt="500"
+                    >
+                      ৳ 500
+                    </button>
+                  </div>
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 btn-sm modal-amt-btn"
+                      data-amt="1000"
+                    >
+                      ৳ 1,000
+                    </button>
+                  </div>
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 btn-sm modal-amt-btn"
+                      data-amt="2500"
+                    >
+                      ৳ 2,500
+                    </button>
+                  </div>
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 btn-sm modal-amt-btn"
+                      data-amt="5000"
+                    >
+                      ৳ 5,000
+                    </button>
+                  </div>
+                </div>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="modalCustomAmount"
+                  placeholder="Or enter custom amount in BDT"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase">Your Information</label>
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donorName"
+                      placeholder="Full Name *"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="donorPhone"
+                      placeholder="Mobile Number *"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="donorEmail"
+                      placeholder="Email Address (for tax receipt)"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase">Payment Method</label>
+                <div class="d-flex gap-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="payBkash"
+                      value="bKash"
+                      checked
+                    />
+                    <label class="form-check-label fw-semibold" for="payBkash">bKash</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="payNagad"
+                      value="Nagad"
+                    />
+                    <label class="form-check-label fw-semibold" for="payNagad">Nagad</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="payCard"
+                      value="Card/Bank"
+                    />
+                    <label class="form-check-label fw-semibold" for="payCard">Bank Transfer / Card</label>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                id="btnSubmitDonation"
+                class="btn-aloy-donate w-100 py-3 justify-content-center"
+              >
+                Confirm Donation &amp; Generate Receipt
+              </button>
+            </div>
+            <div id="donationReceiptStep" class="d-none text-center py-4">
+              <i
+                class="bi bi-check-circle-fill text-success"
+                style="font-size: 3.5rem"
+              ></i>
+              <h4 class="fw-bold mt-2">Thank you for your generosity!</h4>
+              <div
+                class="card p-3 bg-light text-start mx-auto my-3"
+                style="max-width: 450px"
+              >
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Receipt No</span><strong id="receiptTxnId"></strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Donor</span><strong id="receiptDonorName"></strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Cause</span><strong id="receiptCause"></strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Amount</span><strong id="receiptAmount"></strong>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span class="text-muted small">Date</span><span id="receiptDate"></span>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-secondary btn-sm me-2"
+                onclick="window.print()"
+              >
+                Print Receipt
+              </button>
+              <button class="btn btn-primary btn-sm" data-bs-dismiss="modal">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Filter functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterBtns = document.querySelectorAll(".program-filter-btn");
+        const progItems = document.querySelectorAll(".prog-item");
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            progItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.getAttribute("data-category") === filterValue
+              ) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+
+      // Google Translate
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,bn,ar,hi",
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+      }
+
+      function setGoogleTranslateCookie(lang) {
+        const host = window.location.hostname;
+        const domain = host.replace(/^www\./, "");
+        if (lang === "en") {
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+            domain;
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." +
+            domain;
+        } else {
+          const val = "/en/" + lang;
+          document.cookie = "googtrans=" + val + "; path=/;";
+          document.cookie = "googtrans=" + val + "; path=/; domain=" + domain;
+          document.cookie = "googtrans=" + val + "; path=/; domain=." + domain;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const select = document.getElementById("languageSwitcher");
+        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+        if (match) {
+          const lang = match[1].split("/")[2];
+          if (lang && select) select.value = lang;
+        }
+        if (select) {
+          select.addEventListener("change", function () {
+            setGoogleTranslateCookie(this.value);
+            window.location.reload();
+          });
+        }
+      });
+    </script>
+    <script
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      async
+      defer
+    ></script>
+  </body>
+</html>

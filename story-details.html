@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building a Better Society Through Small Regular Gifts | Aloy Welfare Foundation</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/pages/stories.css" />
+    <link rel="stylesheet" href="assets/css/pages/story-details.css" />
+  </head>
+  <body class="lang-en story-details-page">
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="d-flex align-items-center gap-3">
+          <span class="d-none d-md-inline text-white-50">
+            <i class="bi bi-shield-check text-warning me-1"></i>Govt NGO Affairs
+            Reg: AF-8912 | 100% Tax-Exempt
+          </span>
+          <span class="d-flex align-items-center gap-1">
+            <i class="bi bi-telephone-fill text-warning"></i>
+            <a href="tel:+8809612345678" class="fw-semibold"
+              >+880 9612-345678</a
+            >
+          </span>
+        </div>
+        <div class="language-switcher-container">
+          <div class="language-select-wrapper">
+            <span class="language-icon">
+              <i class="bi bi-globe"></i>
+            </span>
+            <select
+              id="languageSwitcher"
+              class="language-select"
+              aria-label="Select Language"
+            >
+              <option value="en" selected>English</option>
+              <option value="bn">বাংলা</option>
+              <option value="ar">العربية</option>
+              <option value="hi">हिन्दी</option>
+            </select>
+          </div>
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar navbar-expand-lg navbar-main sticky-top">
+      <nav class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="assets/images/logo.jpg"
+            alt="Aloy Foundation Logo"
+            class="rounded"
+          />
+          <div class="d-flex flex-column">
+            <span class="fw-bold fs-5 lh-1" style="color: var(--aloy-blue)">
+              Aloy
+              <span style="color: var(--aloy-green-dark)">Foundation</span>
+            </span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Our Programs</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="education.html"
+                    >📚 Education Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="healthcare.html"
+                    >🩺 Healthcare Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="poverty.html"
+                    >🌾 Poverty Alleviation</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transparency.html">Transparency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html"
+                >Licenses &amp; Documents</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="stories.html">Impact Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn-aloy-donate"
+            data-bs-toggle="modal"
+            data-bs-target="#donationModal"
+          >
+            <span>Donate</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-breadcrumb">
+          <a href="index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a> <span>/</span>
+          <a href="stories.html">Impact Stories</a> <span>/</span>
+          <span>Story Details</span>
+        </div>
+        <h1 class="page-hero-title">Impact Stories &amp; Field Work</h1>
+        <p class="page-hero-lead">
+          Real voices and transformative journeys made possible by your continuous regular support across Bangladesh.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLE MAIN CONTENT ===== -->
+    <main class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left Column: Story Content -->
+          <div class="col-lg-8">
+            <article class="story-article">
+              <!-- Category & Header -->
+              <div class="mb-3">
+                <span class="story-category-tag">
+                  <i class="bi bi-tree-fill"></i> Tree Plantation &amp; Climate Action
+                </span>
+                <h1 class="story-main-title">
+                  Building a better society through small regular gifts
+                </h1>
+                <div class="story-subtitle-bn">
+                  নিয়মিত ক্ষুদ্র অনুদানে একটি সুন্দর আগামী গড়ার গল্প
+                </div>
+              </div>
+
+              <!-- Meta Info Bar -->
+              <div class="story-meta-bar">
+                <div class="story-meta-items">
+                  <span class="story-meta-item">
+                    <i class="bi bi-calendar3"></i> Oct 12, 2026
+                  </span>
+                  <span class="story-meta-item">
+                    <i class="bi bi-geo-alt-fill"></i> Fulgazi, Feni
+                  </span>
+                  <span class="story-meta-item">
+                    <i class="bi bi-person-fill"></i> Aloy Field Team
+                  </span>
+                  <span class="story-meta-item">
+                    <i class="bi bi-clock-fill"></i> 4 min read
+                  </span>
+                </div>
+                <div class="story-share-wrap">
+                  <span class="story-share-label">Share:</span>
+                  <a
+                    href="https://facebook.com/sharer/sharer.php?u=window.location.href"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-share"
+                    title="Share on Facebook"
+                  >
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send?text=Building%20a%20better%20society%20through%20small%20regular%20gifts"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-share"
+                    title="Share on WhatsApp"
+                  >
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/intent/tweet?text=Building%20a%20better%20society"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-share"
+                    title="Share on Twitter"
+                  >
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Featured Image -->
+              <div class="story-featured-media">
+                <img
+                  src="assets/images/stories/1.jpg"
+                  alt="Tree Plantation and Regular Giving by Aloy Foundation"
+                />
+                <div class="story-media-caption">
+                  <i class="bi bi-camera-fill"></i>
+                  <span>Aloy Foundation volunteers and local farmers planting fruit-bearing saplings in Fulgazi, Feni.</span>
+                </div>
+              </div>
+
+              <!-- Article Body -->
+              <div class="story-article-content">
+                <div class="story-lead-paragraph">
+                  প্রতিমাসে ছোট ছোট উপহার একত্রিত হয়ে কীভাবে গ্রামীণ পরিবেশে একটি টেকসই পরিবর্তন আনে, তার অনন্য উদাহরণ ফুলগাজী ও ফেনীর বৃক্ষরোপণ কর্মসূচি। আলোয় ফাউন্ডেশনের নিয়মিত সাধারণ দাতাদের সহায়তায় ৫,০০০ এর অধিক ফলদ ও বনজ বৃক্ষ রোপণ করা হয়েছে।
+                </div>
+
+                <p>
+                  In a changing climate where recurring flash floods and severe erosion threaten marginal farmers along riverbanks, planting trees is not merely an environmental ritual—it is a vital lifeline for economic survival and soil stabilization. For millions living in remote rural pockets of Bangladesh, losing a homestead to seasonal soil degradation means facing immediate destitution.
+                </p>
+
+                <p>
+                  Recognizing this urgent crisis, the <strong>Aloy Welfare Foundation</strong> launched the <em>"Green Roots for Tomorrow"</em> initiative, powered directly by small, recurring donations from generous people across Bangladesh and abroad. Rather than depending solely on unpredictable annual grants, this program pools micro-donations—as little as ৳100, ৳250, or ৳500 per month—to sustain a reliable, year-round tree-planting campaign.
+                </p>
+
+                <!-- Impact Numbers Grid -->
+                <div class="story-stats-grid">
+                  <div class="story-stat-card">
+                    <div class="story-stat-num">5,200+</div>
+                    <p class="story-stat-lbl">Saplings Planted</p>
+                  </div>
+                  <div class="story-stat-card">
+                    <div class="story-stat-num">350+</div>
+                    <p class="story-stat-lbl">Families Benefited</p>
+                  </div>
+                  <div class="story-stat-card">
+                    <div class="story-stat-num">100%</div>
+                    <p class="story-stat-lbl">Native Varieties</p>
+                  </div>
+                  <div class="story-stat-card">
+                    <div class="story-stat-num">৳0</div>
+                    <p class="story-stat-lbl">Expense for Farmers</p>
+                  </div>
+                </div>
+
+                <h2>Community-Led Sustainability in Action</h2>
+
+                <p>
+                  Unlike conventional tree distribution drives where saplings are handed out and forgotten, Aloy Foundation pairs every sapling gift with hands-on agricultural guidance and natural pest-management training. In collaboration with local village committees and youth clubs, our field officers map out erosion-prone homestead embankments, village school playgrounds, and rural roadsides.
+                </p>
+
+                <p>
+                  Special priority was given to high-yield fruit varieties such as mango, guava, amla (amla/amla emblic), jackfruit, and mahogany timber saplings. These trees not only provide shade and prevent soil erosion, but also guarantee vitamin-rich nutrition for young children and a reliable secondary source of income when fruits are harvested for the local bazaar.
+                </p>
+
+                <!-- Beneficiary Quote -->
+                <div class="story-quote-card">
+                  <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="quote-text">
+                    "একটি গাছ শুধু ছায়াই দেয় না, আমাদের মতো নিঃস্ব পরিবারের কাছে এটি সন্তানের মতো পরম নির্ভরতা। গত বন্যার পর আমার বাড়ির সীমানা ভেঙে যাচ্ছিল। আলোয় ফাউন্ডেশন থেকে দেওয়া পেয়ারা আর আমলকীর চারাগুলো আমার উঠানের মাটি আটকে রেখেছে এবং পরিবারের ভিটামিনের অভাব মেটাচ্ছে।"
+                  </div>
+                  <div class="quote-author">
+                    Md. Abdul Gafur, 62 <span>— Smallholder Farmer, Fulgazi, Feni</span>
+                  </div>
+                </div>
+
+                <h2>The Power of Regular Micro-Giving</h2>
+
+                <p>
+                  Many believe that solving colossal humanitarian challenges requires astronomical wealth. However, the success of the Fulgazi project demonstrates that consistent generosity—no matter how modest—creates compound impact over time. When 500 supporters pledge ৳200 every month, an entire union can be revitalized with tree coverage, clean water, and organic nourishment.
+                </p>
+
+                <!-- Field Gallery -->
+                <div class="story-gallery-grid">
+                  <div class="story-gallery-item">
+                    <img
+                      src="assets/images/stories/2.jpg"
+                      alt="Street Children Learning with Aloy Foundation"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="story-gallery-item">
+                    <img
+                      src="assets/images/stories/3.jpg"
+                      alt="Livelihood Training and Sewing Machine Grant"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="story-gallery-item">
+                    <img
+                      src="assets/images/programs/1.jpg"
+                      alt="Aloy Pathshala Education Support"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <h2>Looking Forward: Scaling to Coastal Belts</h2>
+
+                <p>
+                  Building on the milestones achieved in Feni, Aloy Foundation is expanding the tree plantation and disaster resilience model to the coastal unions of Bhola and Noakhali in the coming months. With the monsoon season approaching, our field teams are preparing nursery seedbeds and mobilizing local volunteers to plant an additional 10,000 mangrove and timber saplings along coastal dikes.
+                </p>
+
+                <p>
+                  We invite every caring soul to take part in this journey of spreading light and green hope. Together, one small gift at a time, we are safeguarding our land and leaving a flourishing Bangladesh for generations to come.
+                </p>
+              </div>
+
+              <!-- Next / Prev Story Navigation -->
+              <div class="story-navigation-bar">
+                <a href="story-details.html" class="story-nav-btn">
+                  <span><i class="bi bi-arrow-left"></i> Previous Story</span>
+                  <h4>From street children’s dreams to a highway of service</h4>
+                </a>
+                <a href="story-details.html" class="story-nav-btn text-end">
+                  <span>Next Story <i class="bi bi-arrow-right"></i></span>
+                  <h4>One elder and one family’s journey to self-reliance</h4>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Right Column: Sidebar -->
+          <div class="col-lg-4">
+            <aside class="story-sidebar">
+              <!-- Support / Donation Card -->
+              <div class="sidebar-widget support-widget-card">
+                <h3 class="widget-title">
+                  <i class="bi bi-heart-fill"></i> Support This Cause
+                </h3>
+                <p class="support-widget-text">
+                  Your regular or one-time gift enables us to supply tree saplings, school meals, and emergency livelihood tools to helpless families.
+                </p>
+                <div class="mb-3 p-3 bg-white rounded-3 border">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="text-muted small">Sponsor 5 Fruit Trees</span>
+                    <strong class="text-success">৳ ২৫০</strong>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="text-muted small">Sponsor 10 Saplings</span>
+                    <strong class="text-success">৳ ৫০০</strong>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">Village Green Belt</span>
+                    <strong class="text-success">৳ ২,০০০</strong>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn-sidebar-donate"
+                  data-bs-toggle="modal"
+                  data-bs-target="#donationModal"
+                >
+                  <i class="bi bi-gift-fill"></i> Donate for Plantation
+                </button>
+              </div>
+
+              <!-- Related Stories Widget -->
+              <div class="sidebar-widget">
+                <h3 class="widget-title">
+                  <i class="bi bi-journal-richtext"></i> Related Stories
+                </h3>
+
+                <a href="story-details.html" class="widget-story-item">
+                  <div class="widget-story-thumb">
+                    <img src="assets/images/stories/2.jpg" alt="Street children education" />
+                  </div>
+                  <div>
+                    <div class="widget-story-meta">Sep 28, 2026 • Education</div>
+                    <h4 class="widget-story-title">From street children’s dreams to a highway of service</h4>
+                  </div>
+                </a>
+
+                <a href="story-details.html" class="widget-story-item">
+                  <div class="widget-story-thumb">
+                    <img src="assets/images/stories/3.jpg" alt="Elder self reliance" />
+                  </div>
+                  <div>
+                    <div class="widget-story-meta">Sep 5, 2026 • Livelihood</div>
+                    <h4 class="widget-story-title">One elder and one family’s journey to self-reliance</h4>
+                  </div>
+                </a>
+
+                <a href="story-details.html" class="widget-story-item">
+                  <div class="widget-story-thumb">
+                    <img src="assets/images/programs/2.jpg" alt="Eye surgery camp" />
+                  </div>
+                  <div>
+                    <div class="widget-story-meta">Jul 14, 2026 • Healthcare</div>
+                    <h4 class="widget-story-title">Restoring vision to 45 rural elders in Char areas</h4>
+                  </div>
+                </a>
+
+                <a href="story-details.html" class="widget-story-item">
+                  <div class="widget-story-thumb">
+                    <img src="assets/images/programs/3.jpg" alt="Rickshaw grant" />
+                  </div>
+                  <div>
+                    <div class="widget-story-meta">Jun 30, 2026 • Self-Reliance</div>
+                    <h4 class="widget-story-title">From day laborer to rickshaw owner: Rahim's proud journey</h4>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Quick Inquiry / Contact Widget -->
+              <div class="sidebar-widget">
+                <h3 class="widget-title">
+                  <i class="bi bi-chat-dots-fill"></i> Need Field Inquiries?
+                </h3>
+                <p class="text-muted small mb-3">
+                  Have questions about our field initiatives or wish to visit our ongoing projects in Feni?
+                </p>
+                <div class="d-flex flex-column gap-2 mb-3 small">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill text-success"></i>
+                    <strong>+880 9612-345678</strong>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope-fill text-success"></i>
+                    <span>contact@aloyfoundation.org</span>
+                  </div>
+                </div>
+                <a href="contact.html" class="btn btn-outline-primary btn-sm w-100 fw-semibold">
+                  Contact Field Desk
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <!-- Bottom CTA Banner Matching documents.html -->
+        <div class="theme-contact-banner mt-5">
+          <div class="d-flex align-items-center gap-3">
+            <div class="banner-icon-box">
+              <i class="bi bi-megaphone-fill"></i>
+            </div>
+            <div>
+              <h3 class="banner-title">Have an Inspiring Story to Share?</h3>
+              <p class="banner-subtitle">
+                Are you a beneficiary, community worker, or volunteer with an impactful journey? Let our team know.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="contact.html" class="btn btn-aloy-primary" style="padding: 10px 24px; font-size: 0.95rem;">
+              <i class="bi bi-send-fill me-2"></i> Submit Your Story
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-main">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Col 1: Brand & Social -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-logo">
+              <img src="assets/images/logo.jpg" alt="Aloy Foundation" />
+            </div>
+            <p class="small text-white-50 pe-lg-3">
+              Aloy Foundation is a registered non-profit dedicated to education,
+              healthcare and lasting poverty alleviation in Bangladesh.
+            </p>
+            <div class="footer-social-wrap mt-3">
+              <span class="footer-social-title">Connect With Us</span>
+              <div class="social-links mt-2">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-fb"
+                  title="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-yt"
+                  title="YouTube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-ig"
+                  title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-li"
+                  title="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://wa.me/8801XXXXXXXXX"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-wa"
+                  title="WhatsApp"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-6 col-lg-2 col-md-3">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="transparency.html">Transparency</a></li>
+              <li><a href="documents.html">Licenses &amp; Documents</a></li>
+              <li><a href="stories.html">Impact Stories</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Programs -->
+          <div class="col-6 col-lg-3 col-md-3">
+            <h5 class="footer-heading">Programs</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="education.html"
+                  >📚 Education &amp; Dropout Prevention</a
+                >
+              </li>
+              <li><a href="healthcare.html">🩺 Free Medical Camps</a></li>
+              <li>
+                <a href="poverty.html">🌾 Sewing &amp; Rickshaws</a>
+              </li>
+              <li>
+                <a href="index.html#other-ways-to-donate"
+                  >❤️ Sadaqah &amp; Zakat Fund</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact</h5>
+            <div class="footer-contact-info">
+              <p class="small text-white-50 mb-2">
+                <i class="bi bi-geo-alt-fill text-warning me-2"></i>
+                Plot 62 &amp; 64, Road 3, Block A, Aftabnagar, Dhaka 1212
+              </p>
+              <p class="small text-white-50 mb-2">
+                <i class="bi bi-telephone-fill text-warning me-2"></i>
+                <a href="tel:+8809612345678">+880 9612-345678</a>
+              </p>
+              <p class="small text-white-50 mb-2">
+                <i class="bi bi-envelope-fill text-warning me-2"></i>
+                <a href="mailto:info@aloyfoundation.org"
+                  >info@aloyfoundation.org</a
+                >
+              </p>
+              <p class="small text-white-50 mb-0">
+                <i class="bi bi-clock-fill text-warning me-2"></i> Sat - Thu:
+                9:00 AM - 6:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-top border-secondary border-opacity-25 mt-4 pt-3 d-flex flex-wrap justify-content-between align-items-center footer-bottom"
+        >
+          <p class="small text-white-50 mb-0">
+            &copy; 2026 Aloy Welfare Foundation. All Rights Reserved.
+          </p>
+          <p class="small text-white-50 mb-0">
+            Certified 100% Tax-Exempt Non-Profit in Bangladesh
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== DONATION MODAL ===== -->
+    <div
+      class="modal fade"
+      id="donationModal"
+      tabindex="-1"
+      aria-labelledby="donationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="donationModalLabel">
+              <i class="bi bi-heart-fill text-danger me-2"></i>Make a Secure
+              Donation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div id="donationFormStep">
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase"
+                  >Choose Program</label
+                >
+                <div class="row g-2">
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success w-100 active btn-sm"
+                      data-modal-cause="education"
+                    >
+                      Education
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success w-100 btn-sm"
+                      data-modal-cause="healthcare"
+                    >
+                      Healthcare
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button
+                      type="button"
+                      class="btn btn-outline-success w-100 btn-sm"
+                      data-modal-cause="poverty"
+                    >
+                      Self-Reliance
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase"
+                  >Select Amount (BDT)</label
+                >
+                <div class="row g-2 mb-2">
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 active btn-sm modal-amt-btn"
+                      data-amt="500"
+                    >
+                      ৳ 500
+                    </button>
+                  </div>
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 btn-sm modal-amt-btn"
+                      data-amt="1000"
+                    >
+                      ৳ 1,000
+                    </button>
+                  </div>
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 btn-sm modal-amt-btn"
+                      data-amt="2500"
+                    >
+                      ৳ 2,500
+                    </button>
+                  </div>
+                  <div class="col-3">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary w-100 btn-sm modal-amt-btn"
+                      data-amt="5000"
+                    >
+                      ৳ 5,000
+                    </button>
+                  </div>
+                </div>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="modalCustomAmount"
+                  placeholder="Or enter custom amount in BDT"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase"
+                  >Your Information</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="donorName"
+                      placeholder="Full Name *"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="donorPhone"
+                      placeholder="Mobile Number *"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="donorEmail"
+                      placeholder="Email Address (for tax receipt)"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small text-muted text-uppercase"
+                  >Payment Method</label
+                >
+                <div class="d-flex gap-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="payBkash"
+                      value="bKash"
+                      checked
+                    />
+                    <label class="form-check-label fw-semibold" for="payBkash"
+                      >bKash</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="payNagad"
+                      value="Nagad"
+                    />
+                    <label class="form-check-label fw-semibold" for="payNagad"
+                      >Nagad</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="payCard"
+                      value="Card/Bank"
+                    />
+                    <label class="form-check-label fw-semibold" for="payCard"
+                      >Bank Transfer / Card</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                id="btnSubmitDonation"
+                class="btn-aloy-donate w-100 py-3 justify-content-center"
+              >
+                Confirm Donation &amp; Generate Receipt
+              </button>
+            </div>
+            <div id="donationReceiptStep" class="d-none text-center py-4">
+              <i
+                class="bi bi-check-circle-fill text-success"
+                style="font-size: 3.5rem"
+              ></i>
+              <h4 class="fw-bold mt-2">Thank you for your generosity!</h4>
+              <div
+                class="card p-3 bg-light text-start mx-auto my-3"
+                style="max-width: 450px"
+              >
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Receipt No</span
+                  ><strong id="receiptTxnId"></strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Donor</span
+                  ><strong id="receiptDonorName"></strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Cause</span
+                  ><strong id="receiptCause"></strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-muted small">Amount</span
+                  ><strong id="receiptAmount"></strong>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span class="text-muted small">Date</span
+                  ><span id="receiptDate"></span>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-secondary btn-sm me-2"
+                onclick="window.print()"
+              >
+                Print Receipt
+              </button>
+              <button class="btn btn-primary btn-sm" data-bs-dismiss="modal">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Google Translate Initialization
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,bn,ar,hi",
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+      }
+
+      function setGoogleTranslateCookie(lang) {
+        const host = window.location.hostname;
+        const domain = host.replace(/^www\./, "");
+        if (lang === "en") {
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+            domain;
+          document.cookie =
+            "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." +
+            domain;
+        } else {
+          const val = "/en/" + lang;
+          document.cookie = "googtrans=" + val + "; path=/;";
+          document.cookie = "googtrans=" + val + "; path=/; domain=" + domain;
+          document.cookie = "googtrans=" + val + "; path=/; domain=." + domain;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const select = document.getElementById("languageSwitcher");
+        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+        if (match) {
+          const lang = match[1].split("/")[2];
+          if (lang && select) select.value = lang;
+        }
+        if (select) {
+          select.addEventListener("change", function () {
+            setGoogleTranslateCookie(this.value);
+            window.location.reload();
+          });
+        }
+      });
+    </script>
+    <script
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      async
+      defer
+    ></script>
+  </body>
+</html>

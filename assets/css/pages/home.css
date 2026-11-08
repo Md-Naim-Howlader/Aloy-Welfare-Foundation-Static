@@ -279,11 +279,21 @@
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .prog-card:hover {
   box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
   border-color: #cbd5e1;
+  transform: translateY(-4px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.prog-card:hover .prog-title {
+  color: #0d7a53;
 }
 
 .prog-img-wrap {
@@ -343,7 +353,8 @@
   overflow: hidden;
 }
 
-.prog-donate {
+.prog-donate,
+.btn-prog-view {
   margin-top: auto;
   width: 100%;
   background: linear-gradient(135deg, #0d7a53 0%, #09583b 100%);
@@ -359,12 +370,16 @@
   gap: 8px;
   box-shadow: 0 4px 12px rgba(13, 122, 83, 0.25);
   transition: all 0.25s ease;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
-.prog-donate:hover {
+.prog-donate:hover,
+.btn-prog-view:hover {
   background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
   box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35);
   transform: translateY(-1px);
+  color: #ffffff !important;
 }
 
 /* Owl Carousel Custom Controls */
@@ -449,11 +464,18 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .m-card:hover {
   box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
   border-color: #cbd5e1;
+  color: inherit;
+  text-decoration: none;
+}
+
+.m-card:hover .m-title {
+  color: #0d7a53;
 }
 
 .m-media {

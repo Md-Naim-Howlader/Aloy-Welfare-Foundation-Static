@@ -1738,3 +1738,75 @@ body {
   background: #eaf7ee;
   color: #0d7a53;
 }
+
+
+/* ================================================================
+   DONOR LOGIN & REGISTRATION HEADER STYLES
+   ================================================================ */
+.btn-donor-auth {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #ffffff;
+  color: #0b3d22 !important;
+  border: 1.5px solid #c7e8d2;
+  padding: 8px 16px;
+  border-radius: var(--aloy-radius-pill);
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(13, 122, 83, 0.08);
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.btn-donor-auth:hover {
+  background: #eaf7ee;
+  border-color: #0d7a53;
+  color: #0d7a53 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 122, 83, 0.16);
+}
+
+.btn-donor-auth i {
+  font-size: 1.05rem;
+  color: #0d7a53;
+}
+
+.topbar-donor-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #f1f5f9 !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.topbar-donor-link:hover {
+  background: rgba(255, 255, 255, 0.24);
+  color: #ffffff !important;
+  border-color: var(--aloy-amber);
+}
+
+/* Donor Modal Tabs Styling */
+#donorAuthTabs .nav-link {
+  color: #475569;
+  border: none;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+#donorAuthTabs .nav-link.active {
+  background: linear-gradient(135deg, #0d7a53 0%, #09583b 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(13, 122, 83, 0.25);
+}
